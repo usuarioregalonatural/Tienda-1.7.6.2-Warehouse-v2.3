@@ -1,0 +1,26 @@
+/*** Modals ***/
+.modal-backdrop{
+  @include st2(background, $modals_overlay);
+}
+.modal-content{
+  @include st2(background, $modals_bg);
+  border: $modals_border;
+  @if $modals_boxshadow != none {
+    box-shadow: $modals_boxshadow;
+  }
+}
+
+.js-quickview-np-btn{
+  @include st2(background, $modals_bg);
+}
+
+
+/*** Notifications ***/
+.ns-box{
+  @include st2(background, $modals_n_bg);
+  @include st2(color, $modals_n_txt);
+  border: $modals_n_border;
+  @if $modals_n_boxshadow != none {
+    box-shadow: $modals_n_boxshadow;
+  }
+}

@@ -1,0 +1,16 @@
+#iqitcookielaw {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out;
+  transform: translate(0, 50%);
+  z-index: 5101; 
+}
+#iqitcookielaw.iqitcookielaw-showed{ 
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}

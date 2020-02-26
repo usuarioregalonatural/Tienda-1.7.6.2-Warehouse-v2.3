@@ -1,0 +1,9 @@
+[{shop_name}]({shop_url})
+Hola,
+
+Este artículo está de nuevo en stock.
+
+Puede acceder a la página del producto haciendo clic en el enlace: [{product}]({product_link})
+Puede solicitarlo ahora mismo en nuestra tienda en línea.
+
+[{shop_name}]({shop_url}) desarrollado con [PrestaShop™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

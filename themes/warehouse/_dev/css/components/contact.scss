@@ -1,0 +1,56 @@
+.contact-rich {
+  word-wrap: break-word;
+  > strong{
+    margin-bottom: .5rem;
+    display: inline-block;
+  }
+  .part {
+    height: auto;
+    overflow: hidden;
+    .icon {
+      vertical-align: middle;
+      display: inline-block;
+      text-align: center;
+      width: 3rem;
+      i {
+        font-size: 2rem;
+      }
+    }
+    .data {
+      width: auto;
+      overflow: hidden;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+}
+
+.contact-page-info {
+  border-right: 1px solid $gray-lighter;
+}
+
+.block-iqitcontactpage {
+  hr {
+    margin: .3rem 0;
+  }
+  .part {
+    .icon {
+      min-width: 1rem;
+      margin-right: .3rem;
+      width: auto;
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+  .contact-page-info {
+    border-right: none;
+    border-bottom: 1px solid $gray-lighter;
+    margin-bottom: 2rem;
+  }
+}
+

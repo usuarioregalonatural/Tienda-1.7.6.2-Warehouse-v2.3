@@ -1,0 +1,112 @@
+.cbp-hrmenu .cbp-submenu-aindicator {
+  margin-left: 0px;
+  margin-right: 3px; }
+
+.cbp-hrmenu .cbp-mainlink-iicon, .cbp-hrmenu .cbp-mainlink-icon {
+  margin-right: 0px;
+  margin-left: 4px;
+  float: right; }
+
+.cbp-hrmenu .cbp-vertical-title .icon {
+  margin-left: 10px;
+  margin-right: 0px; }
+
+.cbp-vertical-on-top {
+  float: right; }
+
+.cbp-hrmenu > ul > li {
+  float: right;
+  direction: ltr !important; }
+
+.cbp-hrmenu .cbp-links li {
+  padding-left: 0px;
+  padding-right: 2px; }
+
+.cbp-hrmenu .cbp-links li a {
+  padding-right: 10px;
+  padding-left: 0px; }
+
+.cbp-hrmenu .cbp-hrsub, .cbp-horizontal > ul > li > a, .cbp-horizontal > ul > li > span.cbp-main-link {
+  direction: rtl !important; }
+
+#iqitmegamenu-horizontal #search_block_top_content {
+  float: left; }
+
+.cbp-hrmenu.cbp-vertical .cbp-hrsub-wrapper {
+  right: 0px; }
+
+.cbp-hrmenu.cbp-menu-centered > ul > li {
+  text-align: right; }
+
+.cbp-hrmenu .cbp-links li a:before {
+  left: auto;
+  right: 0px;
+  content: "\f104"; }
+
+.cbp-hrmenu .cbp-links li a:hover:before {
+  left: auto;
+  right: 3px; }
+
+.cbp-hrmenu .cbp-links li.cbp-hrsub-haslevel2 > a:after {
+  content: "\f0d9";
+  float: left;
+  padding-left: 0px;
+  padding-right: 4px; }
+
+.cbp-hrmenu .cbp-submenu-it-indicator {
+  left: 10px;
+  right: auto; }
+  .cbp-hrmenu .cbp-submenu-it-indicator:before {
+    content: "\f104"; }
+
+.cbp-hrmenu .cbp-hrsub-tabs-names li .cbp-inner-border-hider {
+  left: -1px;
+  right: auto; }
+
+.cbp-hrmenu .cbp-products-list .product-image-container {
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px; }
+
+.cbp-hrmenu .cbp-triangle-top {
+  left: 0px; }
+
+.cbp-hrmenu .cbp-tab-pane {
+  border-left: none !important; }
+
+.cbp-hrmenu.cbp-vertical .cbp-submenu-aindicator {
+  left: 8px;
+  right: auto; }
+  .cbp-hrmenu.cbp-vertical .cbp-submenu-aindicator:before {
+    content: "\f104"; }
+
+#cbp-hrmenu1 .cbp-triangle-container {
+  left: auto;
+  right: 0px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg); }
+
+.cbp-vertical.cbp-arrowed .cbp-hrsub-inner {
+  margin-left: 0px;
+  margin-right: 12px; }
+
+  #responsiveMenuShower {
+  text-align: right; }
+  #responsiveMenuShower div.responsiveInykator2 {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0px; }
+
+#responsiveAccordion {
+  text-align: right; }
+
+#responsiveAccordion div.responsiveInykator {
+  float: left;
+  left: 4px;
+  right: auto; }
+
+#responsiveAccordion ul li {
+  padding: 0 7px 0 0px; }

@@ -1,0 +1,46 @@
+.rating-input{
+  font-size: 22px;
+  padding-top: .500rem;
+  i {
+    margin: 0px 2px;
+    cursor: pointer;
+  }
+}
+.iqitreviews-rating, #iqitreviews-snippet{
+  white-space: nowrap;
+}
+
+#iqit-reviews-top{
+  margin: 0 0 0.938rem 0;
+}
+
+#iqitreviews-snippet {
+
+  .iqitreviews-rating{
+    vertical-align: middle;
+    margin-right: 0.375rem;
+  }
+
+  .iqitreviews-rating .iqit-review-star{
+    font-size: 130%;
+  }
+}
+
+
+#iqitreviews-list{
+  > .iqitreviews-review{
+    margin: 0 0 0.625rem 0;
+    padding: 0 0 0.625rem 0;
+  }
+  .iqitreviews-review > .author{
+    opacity: 0.7;
+    font-size: 0.875rem;
+  }
+  .iqitreviews-review > .comment, .iqitreviews-review > .rating, .iqitreviews-review > .title{
+    margin: 0 0 0.375rem 0;
+  }
+}
+
+.product-miniature .iqitreviews-simple{
+  font-size: .8rem;
+}

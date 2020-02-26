@@ -1,0 +1,30 @@
+html{
+  @include st(font-size, $typo_bfont_size, px);
+
+  @media (max-width: 767px){
+    @include st(font-size, $typo_bfont_size_m, px);
+  }
+}
+body{
+  @include st(line-height, $typo_bfont_lineheight, rem);
+}
+
+body{
+  @if $typo_bfont_t == google {
+    @include st2(font-family, $typo_bfont_g_name);
+  } @else if $typo_bfont_t == system {
+      @include st2(font-family, $typo_bfont_s_name);
+  } @else if $typo_bfont_t == custom {
+      @include st2(font-family, $typo_bfont_c_name);
+  }
+}
+
+.h1, .h2, .block-title, .page-title, .modal-title, .step-title{
+  @if $typo_hfont_t == google {
+    @include st2(font-family, $typo_hfont_g_name);
+  } @else if $typo_hfont_t == system {
+    @include st2(font-family, $typo_hfont_s_name);
+  } @else if $typo_hfont_t == custom {
+    @include st2(font-family, $typo_hfont_c_name);
+  }
+}

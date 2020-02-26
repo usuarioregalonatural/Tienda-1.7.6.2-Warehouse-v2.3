@@ -1,0 +1,54 @@
+{*
+* 2007-2015 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    Apply Novation (Artem Zwinger)
+*  @copyright 2016-2019 Apply Novation
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*}
+<script>
+    var hidedFields = {$an_getFieldsRelations|escape:'quotes'};
+    var shower = {$an_getTypeFieldsHider|escape:'quotes'};
+</script>
+
+<script>
+        $(document).ready(function () {
+            $(".multishop_toolbar").hide();
+
+            $('input[type="radio"][name="type"]').click(function () {
+                for (var field in hidedFields) {
+                    var elem = $('input[name^="' + hidedFields[field] + '"]');
+                    elem.each(function () {
+                        $(this).parents('.form-group').hide();
+                    });
+                }
+
+                var type = $(this).val();
+                if (typeof shower[type] == 'object') {
+                    for (var field in shower[type]) {
+                        var elem = $('input[name^="' + shower[type][field] + '"]');
+                        elem.each(function () {
+                            $(this).parents('.form-group').show();
+                        });
+                    }
+                }
+            });
+
+            $('input[type="radio"][name="type"]:checked').click();
+        });
+</script>

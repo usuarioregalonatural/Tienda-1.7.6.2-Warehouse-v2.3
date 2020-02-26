@@ -1,0 +1,474 @@
+/**
+* NOTICE OF LICENSE
+*
+* This product is licensed for one customer to use on one installation (test stores and multishop included).
+* Site developer has the right to modify this module to suit their needs, but can not redistribute the module in
+* whole or in part. Any other use of this module constitues a violation of the user agreement.
+*
+* DISCLAIMER
+*
+* NO WARRANTIES OF DATA SAFETY OR MODULE SECURITY
+* ARE EXPRESSED OR IMPLIED. USE THIS MODULE IN ACCORDANCE
+* WITH YOUR MERCHANT AGREEMENT, KNOWING THAT VIOLATIONS OF
+* PCI COMPLIANCY OR A DATA BREACH CAN COST THOUSANDS OF DOLLARS
+* IN FINES AND DAMAGE A STORES REPUTATION. USE AT YOUR OWN RISK.
+*
+*  @author    idnovate.com <info@idnovate.com>
+*  @copyright 2019 idnovate.com
+*  @license   See above
+*/
+
+.whatsapp {
+    clear: both;
+    padding: 10px 0;
+}
+
+.whatsapp:focus {
+    border: 0;
+    outline: none !important;
+}
+
+.whatsapp span {
+    border-radius: 4px;
+    background: #25D366;
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 8px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+.whatsapp a:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.whatsapp-icon {
+    position: relative;
+    background-image: url('../img/whatsapp.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    /*margin-right: 4px;*/
+    top: -1px;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+.whatsapp-icon-3x {
+    position: relative;
+    background-image: url('../img/whatsapp3x.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    background-size: 38px 38px;
+    top: 10px;
+    vertical-align: middle;
+    left: 2px;
+}
+
+.whatsapp-social-button {
+    background-image: url('../img/whatsapp-social-grey.png')!important;
+}
+
+.whatsapp-social-button:hover {
+    background-image: url('../img/whatsapp-social.png')!important;
+}
+
+.whatsapp-hookDisplayWhatsAppProductSocialButtons {display: none;}
+
+.whatsapp i.icon-whatsapp {
+    font-size: 21px;
+    line-height: 21px;
+    padding-right: 7px;
+}
+
+.whatsapp.left {
+    text-align: left;
+}
+
+.whatsapp.center {
+    text-align: center;
+}
+
+.whatsapp.right {
+    text-align: right;
+}
+.whatsapp.bottom-left {
+    left: 0;
+}
+
+.whatsapp.bottom-right {
+    right: 0;
+}
+
+.whatsapp-hookDisplayFooter {
+    clear: none;
+}
+
+.whatsapp-hookDisplayNav {
+    clear: none;
+    float: left;
+    margin-left: 15px;
+    padding: 0;
+}
+
+.whatsapp-hookDisplayNav span {
+    float: left;
+    padding: 5px 0 10px;
+    line-height: 18px;
+    background: none;
+}
+
+.whatsapp-hookDisplayNav .whatsapp-icon {
+    background-image: url('../img/whatsapp-green.png');
+    top: 0;
+    vertical-align: baseline;
+}
+
+.whatsapp-hookDisplayNav i.icon-whatsapp {
+    vertical-align: 0;
+}
+
+.whatsapp-badge {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    margin: 10px;
+    width: auto !important;
+}
+
+.whatsapp-topWidth {
+    padding: 0;
+    text-align: center;
+}
+
+.whatsapp-topWidthSticky {
+    padding: 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    width: 100%;
+}
+
+.whatsapp-topWidthSticky span {
+    width:100%;
+    border-radius: inherit;
+}
+
+/*body#product .whatsapp-topWidthSticky {display: none;}*/
+
+.whatsapp-bottomWidth {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    width: 100%!important;
+    text-align: center;
+}
+
+/** FLOATING BUTTON **/
+
+.label-container{
+    position:fixed;
+    bottom:35px;
+    right:85px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-container-top-right{
+    position:fixed;
+    top:30px;
+    right:90px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-container-top-left{
+    position:fixed;
+    top:30px;
+    left:90px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-container-bottom-left{
+    position:fixed;
+    bottom:35px;
+    left:90px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-container-left{
+    top:47%;
+    position:fixed;
+    bottom:30px;
+    left:85px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-container-right{
+    top:47%;
+    position:fixed;
+    bottom:30px;
+    right:83px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-container-center{
+    position:fixed;
+    bottom:30px;
+    left:51.5%;
+    display:table;
+    visibility: hidden;
+}
+
+.label-text{
+    color:#FFF;
+    background:rgba(51,51,51,0.5);
+    display:table-cell;
+    vertical-align:middle;
+    padding:10px;
+    border-radius:3px;
+}
+
+.label-arrow{
+    display:table-cell;
+    vertical-align:middle;
+    color:#333;
+    opacity:0.5;
+}
+
+.float-center{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    left:47.5%;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-floating.float-left{
+    top:46%;
+    position:fixed;
+    width:60px;
+    height:60px;
+    left:20px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-floating.float-right{
+    top:46%;
+    position:fixed;
+    width:60px;
+    height:60px;
+    right:20px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-top-left{
+    position:fixed;
+    width:60px;
+    height:60px;
+    top:25px;
+    left:25px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-top-right{
+    position:fixed;
+    width:60px;
+    height:60px;
+    top:25px;
+    right:25px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-bottom-right{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    right:25px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-bottom-left{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    left:25px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-bottom{
+    z-index: 1000;
+}
+
+.float-center{
+    top:46%;
+    z-index: 1000;
+}
+
+.float-floating i.icon-whatsapp{
+    position: relative;
+    top: 11px;
+    left: 1px;
+}
+
+.float-floating{
+    z-index: 1000;
+    color: #FFF!important;
+}
+
+.my-float{
+    font-size:24px;
+    margin-top:18px;
+}
+
+a.float + div.label-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+    max-width: 70%;
+}
+
+a.float:hover + div.label-container{
+    visibility: visible;
+    opacity: 1;
+}
+
+.float .fa-whatsapp:before {
+    font-size: xx-large;
+    top: 14px;
+    left: 1px;
+    position: relative;
+}
+
+.whatsapp-offline {
+    background-color: #ff0000!important;
+}
+
+ /* Agents */
+
+div.whatsappchat-agents-container{
+    width: 300px;
+    z-index: 100000;
+}
+
+div.whatsappchat-agents-content{
+    position: relative;
+    color: inherit;
+    padding: 4px 5px;
+}
+
+div.whatsappchat-agents-content-info{
+    position: relative;
+    color: inherit;
+    padding: 15px 0 0 0;
+}
+
+div.whatsappchat-agents-content-info17{
+    padding: 8px 0 0 0;
+}
+
+a.whatsappchat-agents-content-agent{
+    color: inherit;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+a.whatsappchat-agents-content-agent:hover{
+    background-color: rgba(245, 245, 245, 1);
+}
+
+div.whatsappchat-agents-title{
+    padding: 15px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px 3px 0 0;
+}
+
+div.whatsappchat-agents-title17{
+    font-weight: inherit!important;
+}
+
+span.whatsappchat-agents-content-department{
+    font-size: 11px;
+    line-height: 100%;
+    opacity: .5;
+}
+
+span.whatsappchat-agents-content-name{
+    font-weight: bold;
+    display: block;
+}
+
+span.whatsappchat-agents-content-name17{
+    font-size: smaller;
+}
+
+div.whatsappchat-agents-content-image img{
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin: 5px 10px 5px 0;
+}
+
+.whatsappchat-agents-content-image:after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 2px;
+    left: 40px;
+    background-color: #25d366;
+    background-size: cover;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+body.content_only div.whatsapp {display: none;}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>whatsappchat</name>
+    <displayName><![CDATA[WhatsApp chat - Chat en vivo con tus clientes]]></displayName>
+    <version><![CDATA[1.9.1]]></version>
+    <description><![CDATA[Chatea con tus clientes a trav&eacute;s de WhatsApp, la aplicaci&oacute;n de mensajer&iacute;a m&aacute;s popular]]></description>
+    <author><![CDATA[idnovate]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[¿Está seguro de que desea desinstalar el módulo?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,41 @@
+#iqit-banners {
+    display: table;
+    width: 100%;
+}
+
+#iqit-banners .list-group-item-header  .col-table{
+    border-bottom: 1px solid #cecece;
+    background: #f3f3f3;
+}
+
+
+
+#iqit-banners .list-group-item {
+
+}
+
+#iqit-banners .iqit-banner-reorder {
+    cursor: move;
+    cursor: -webkit-grabbing;
+}
+
+#iqit-banners .row-table {
+    display: table-row;
+}
+
+#iqit-banners .col-table {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 5px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#iqit-banners .col-table-image img {
+    max-width: 250px;
+}
+
+.js-list-group-item-highlight{
+    height: 100px;
+    width: 100%;
+    background: #fff9b6;
+}

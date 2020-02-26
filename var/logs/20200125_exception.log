@@ -1,0 +1,6 @@
+*ERROR* 	v1.7.6.2	2020/01/25 - 19:58:34: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2020/01/25 - 19:58:35: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2020/01/25 - 19:58:50: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database 'regalonatural' at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2020/01/25 - 19:59:50: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database 'regalonatural' at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2020/01/25 - 20:06:48: Shop not found at line 420 in file classes/shop/Shop.php
+*ERROR* 	v1.7.6.2	2020/01/25 - 20:06:49: Shop not found at line 420 in file classes/shop/Shop.php

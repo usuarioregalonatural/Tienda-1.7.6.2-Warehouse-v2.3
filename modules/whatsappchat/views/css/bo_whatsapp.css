@@ -1,0 +1,282 @@
+/**
+* NOTICE OF LICENSE
+*
+* This product is licensed for one customer to use on one installation (test stores and multishop included).
+* Site developer has the right to modify this module to suit their needs, but can not redistribute the module in
+* whole or in part. Any other use of this module constitues a violation of the user agreement.
+*
+* DISCLAIMER
+*
+* NO WARRANTIES OF DATA SAFETY OR MODULE SECURITY
+* ARE EXPRESSED OR IMPLIED. USE THIS MODULE IN ACCORDANCE
+* WITH YOUR MERCHANT AGREEMENT, KNOWING THAT VIOLATIONS OF
+* PCI COMPLIANCY OR A DATA BREACH CAN COST THOUSANDS OF DOLLARS
+* IN FINES AND DAMAGE A STORES REPUTATION. USE AT YOUR OWN RISK.
+*
+*  @author    idnovate.com <info@idnovate.com>
+*  @copyright 2019 idnovate.com
+*  @license   See above
+*/
+img.whatsappchat_avatar {
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: -20px;
+
+}
+img.whatsappchat_avatar_list {
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.icon-whatsapp.bo {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 28px;
+    background: transparent;
+    background-size: 26px;
+    background-position: center;
+}
+a.whatsappchat-agents-content-agent {
+    border: 1px solid rgba(245, 245, 245, 1);
+    margin-bottom: 5px;
+}
+a.whatsappchat-agents-content-agent:hover,
+a.whatsappchat-agents-content-agent:focus{
+    text-decoration: none!important;
+}
+span.whatsappchat-agents-content-name {
+    font-size: 18px!important;
+}
+span.whatsappchat-agents-content-phone,
+span.whatsappchat-agents-content-phone i{
+    font-size: 18px!important;
+}
+span.whatsappchat-agents-content-department {
+    font-size: 14px!important;
+}
+div.whatsappchat-agents-content-image img {
+    height: 110px!important;
+    width: 110px!important;
+}
+div.whatsappchat-agents-content-image:after {
+    width: 24px!important;
+    height: 24px!important;
+    bottom: 4px!important;
+    left: 79px!important;
+    background-color: #25d366;
+}
+div.whatsappchat-agents-content-image.offline:after {
+    background-color: red;
+}
+div.whatsappchat-agents-content-image.new:after {
+    background-color: transparent;
+}
+table.table.whatsappchatblock div.attributes-color-container {
+    margin: 0 auto;
+}
+p#help-block {
+    font-size: larger!important;
+}
+.floating-bo{
+    width:60px;
+    height:60px;
+    color:#FFF!important;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    display: inline-block;
+}
+
+.float-floating i.icon-whatsapp{
+    position: relative;
+    top: 14px;
+    left: 1px;
+    font-size: xx-large;
+}
+
+.float-floating{
+    z-index: 9999999;
+}
+
+.clean {
+    clear: both;
+}
+
+.dayContainer {
+    float: left;
+    line-height: 20px;
+    margin-right: 8px;
+    width: 65px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.colorBox {
+    cursor: pointer;
+    height: 45px;
+    border: 2px solid #888;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.colorBox.WorkingDayState {
+    border: 2px solid #4E8059;
+    background-color: #8ade8f;
+}
+
+.colorBox.RestDayState {
+    border: 2px solid #7a1c44;
+    background-color: #de5962;
+}
+
+.operationTime .mini-time {
+    width: 40px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.dayContainer .add-on {
+    padding: 4px 2px;
+}
+
+.colorBoxLabel {
+    clear: both;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.operationTime {
+    margin-top: 5px;
+}
+
+/* Multiselect */
+.fixed-width-xl { min-width: 250px !important; width: auto !important; }
+.multiple_select.fixed-width-xl { min-height: 200px !important; }
+
+select { width: 100px; }
+input[name^=name] { width: 300px !important; }
+
+.uix-multiselect { font-size: 1em; font-family: "Open Sans", Helvetica, Arial, sans-serif; background: #F5F8F9; border-radius: 3px;}
+.uix-multiselect ul { -moz-user-select: none; }
+.uix-multiselect li { margin: 0; padding: 0; cursor: default; min-height: 20px; font-size: 11px; list-style: none; }
+.uix-multiselect li a { color: #999; text-decoration: none; padding: 0; display: block; float: left; cursor: pointer;}
+.uix-multiselect li.ui-draggable-dragging { padding-left: 10px; }
+
+.uix-multiselect div.multiselect-selected-list { position: relative; height: auto !important; padding: 0; margin: 0; border: 0; float:right !important; }
+.uix-multiselect ul.multiselect-selected-list { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; position: relative; width: 100%;  border: 1px solid #C7D6DB;}
+.uix-multiselect ul.multiselect-selected-list li { }
+
+.uix-multiselect div.multiselect-available-list { position: relative; height: auto !important; padding: 0; margin: 0; border: 0; float:left; }
+.uix-multiselect ul.multiselect-available-list { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; width: 100%;  border: 1px solid #C7D6DB;}
+.uix-multiselect ul.multiselect-available-list li { padding-left: 0px; }
+.uix-multiselect .option_content { padding-left: 5px; padding-right: 15px; }
+.uix-multiselect .ui-state-default { border: none; margin-bottom: 1px; position: relative; padding-left: 20px; padding: 3px; background: #edf7fb}
+
+.uix-multiselect .multiselect-available-list .option-element { background: #c2e6f4; }
+.uix-multiselect .multiselect-selected-list .option-element { background: #85dafa; }
+
+.uix-multiselect .multiselect-available-list .ui-state-hover { border: none; opacity: 0.70; color: #fff;}
+.uix-multiselect .multiselect-selected-list .ui-state-hover { border: none; opacity: 0.55; color: #fff;}
+
+.uix-multiselect .ui-widget-header {
+    background: #edf7fb !important;
+    border: 1px solid #C7D6DB !important;
+    border-radius: 3px;
+    font-weight: normal;
+}
+
+.uix-multiselect .add-all { float: right; padding: 7px; color: #0077a4;}
+.uix-multiselect .remove-all { float: right; padding: 7px; color: #0077a4;}
+.uix-multiselect .uix-search { float: left; padding: 4px;}
+.uix-multiselect .count { float: left; padding: 7px;}
+
+.uix-multiselect li span.ui-icon-arrowthick-2-n-s { position: absolute; left: 2px; }
+.uix-multiselect li a.action { position: absolute; right: 2px; top: 2px; }
+
+.uix-multiselect .ui-widget-header .uix-search {
+    height: 15px;
+    padding: 2px;
+    opacity: 0.8;
+    margin: 1px;
+    width: 100px !important;
+    float:right;
+    font-size: 85%;
+}
+
+.uix-multiselect-original { position: absolute; left:-999999px; }
+.uix-multiselect { position: relative; float:left; margin-bottom: 5px; }
+.uix-multiselect .multiselect-selected-list, .uix-multiselect .multiselect-available-list { position:absolute; overflow:hidden; left: 0px !important;}
+.uix-multiselect .multiselect-selected-list { width: 52% !important; }
+.uix-multiselect .multiselect-available-list { width: 48% !important; }
+.uix-multiselect .multiselect-selected-list { float: right; }
+.uix-multiselect .ui-widget-header div.header-text { white-space: nowrap; display: block !important;}
+.uix-multiselect .ui-widget-header { overflow:hidden;  white-space:nowrap; padding:2px 4px; }
+.uix-multiselect .ui-widget-header div.header-text { white-space: nowrap; }
+.uix-multiselect .ui-widget-header .uix-control-right, .uix-multiselect .ui-widget-header .uix-control-left { width:16px; height:16px; }
+.uix-multiselect .ui-widget-header .uix-control-right { float:right; }
+.uix-multiselect .ui-widget-header .uix-control-left { float:left; }
+.uix-multiselect .uix-list-container { position:relative; height: 170px !important; overflow:auto; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.uix-multiselect .uix-list-container .ui-priority-secondary { padding-right:0; }
+.uix-multiselect .group-element { position:relative; padding-left:0;  white-space:nowrap; overflow:hidden; }
+.uix-multiselect .group-element-collapsable { padding-left:16px; }
+.uix-multiselect .group-element span.collapse-handle { position:absolute; margin-top:-8px; top:50%; left:0; }
+.uix-multiselect .group-element .label { margin:0 3px;  white-space:nowrap; overflow:hidden; }
+.uix-multiselect .group-element .ui-icon { float:left; cursor:pointer; }
+.uix-multiselect .option-element, .dragged-element { cursor:pointer; padding:3px 5px; }
+.uix-multiselect .option-element.ui-state-disabled { font-style:italic; }
+.dragged-element, .dragged-grouped-element { padding:1px 3px; }
+.dragged-grouped-element { padding-left:16px; }
+.uix-multiselect .grouped-option { position:relative; padding-left:16px }
+.uix-multiselect .grouped-option .ui-icon { position:absolute; left:0; }
+
+.time-column {
+    width: auto;
+    height: 20px;
+    display: block;
+}
+
+.time-column.valid-date-icon { color: #72c279; }
+.time-column.future-date-icon { color: #f3e838; }
+.time-column.expired-date-icon { color: #e08f95; }
+
+.time-column [class^="icon-"] { font-size: 18px !important; }
+
+/* Timepicker */
+.ui-timepicker-wrapper{overflow-y:auto;max-height:150px;width:6.5em;background:#fff;border:1px solid #ddd;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);outline:0;z-index:10001;margin:0}.ui-timepicker-wrapper.ui-timepicker-with-duration{width:13em}.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60{width:11em}.ui-timepicker-list{margin:0;padding:0;list-style:none}.ui-timepicker-duration{margin-left:5px;color:#888}.ui-timepicker-list:hover .ui-timepicker-duration{color:#888}.ui-timepicker-list li{padding:3px 0 3px 5px;cursor:pointer;white-space:nowrap;color:#000;list-style:none;margin:0}.ui-timepicker-list:hover .ui-timepicker-selected{background:#fff;color:#000}li.ui-timepicker-selected,.ui-timepicker-list li:hover,.ui-timepicker-list .ui-timepicker-selected:hover{background:#1980EC;color:#fff}li.ui-timepicker-selected .ui-timepicker-duration,.ui-timepicker-list li:hover .ui-timepicker-duration{color:#ccc}.ui-timepicker-list li.ui-timepicker-disabled,.ui-timepicker-list li.ui-timepicker-disabled:hover,.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled{color:#888;cursor:default}.ui-timepicker-list li.ui-timepicker-disabled:hover,.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled{background:#f2f2f2}
+
+.position-not-selected {background-color: red;color: white;padding: 1px 5px 1px 5px;font-weight: bold;}
+.position-selected {background-color: #4e9a04;color: white;padding: 1px 5px 1px 5px;font-weight: bold;margin-bottom: 2px;display: inline-block;}
+.whatsappchat-show-on .icon {margin-right: 5px;}
+.whatsappchat-valid-icon {margin: 0 auto;}
+
+.whatsappchat-valid-icon .tooltip {width:210px;}
+.whatsappchat-display-on .tooltip {width:350px;}
+
+#positions_help_content .positions-help-page {display: block;font-size: small;}
+#positions_help_content .positions-help-page a {text-decoration: none;}
+.positions-help-page-text {font-size: small;padding-bottom: 5px;display: block;}
+.jBox-Modal .jBox-title {border-bottom: none!important;font-size: larger;font-weight: bold;}
+.jBox-Modal .jBox-content {padding: 10px 30px 30px 30px!important;}
+.bootstrap .positions-help-page-text.message-item {padding: 5px 15px 0!important;margin: 0!important;font-weight: bold;}

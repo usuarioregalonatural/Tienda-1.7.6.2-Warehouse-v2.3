@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => 'tiendamysql',
+    'database_port' => '',
+    'database_name' => 'regalonatural',
+    'database_user' => 'root',
+    'database_password' => 'vmsn2004',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'HbrUB5Fkw5aHKOWWkj6JbYWaQfJ97gmWwms9S5BNuy44A2JvQXL7NWd8',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2019-12-09',
+    'locale' => 'es-ES',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'MPV8EdLNkxPr11LpjdUbyFptrcIduVpyOQSaftKC766bGfJ715tKggis',
+    'cookie_iv' => 'YHnCGtrA',
+    'new_cookie_key' => 'def00000009e423718be077a6c8f555ae232f80b9faa570da148164c22100986b9a723482d8f31311dcb80dc24361b1ab82c66743d861bf14679874aa2183cf7036ad8f6',
+  ),
+);

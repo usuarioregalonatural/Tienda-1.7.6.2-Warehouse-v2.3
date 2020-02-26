@@ -1,0 +1,334 @@
+/*** TOPBAR ***/
+#language_selector{
+  .lang-flag{
+    max-width: 20px;
+  }
+}
+
+/*** HEADER ***/
+#header {
+  position: relative;
+  z-index: 100;
+
+  //topbar
+  .header-nav {
+    position: relative;
+  }
+  .header-nav .right-nav, .header-nav .left-nav {
+    > div > ul {
+      display: inherit;
+    }
+    > div:after {
+      content: " ";
+      display: inline-block;
+      vertical-align: middle;
+      height: 1.5em;
+      width: 1px;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      background-color: currentColor;
+      opacity: .2;
+    }
+    > div:last-child:after {
+      display: none;
+    }
+  }
+
+  //main header
+  .header-btn-w {
+    padding: 0 .5rem;
+  }
+  .header-btn-w .header-btn {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    > .icon {
+      display: inline-block;
+      position: relative;
+    }
+     .title {
+      white-space: nowrap;
+      margin-top: 0.5rem;
+      display: block;
+    }
+  }
+
+  .header-custom-html{
+    p:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .col-header-menu{
+    position: static;
+
+    .cbp-hrsub-narrow{
+      position: static;
+    }
+  }
+
+  //style1
+  .desktop-header-style-1 {
+    .col-header-center .search-widget {
+      margin: 0 auto;
+    }
+    #user_info {
+      margin-top: .6rem;
+    }
+    .header-custom-html{
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  //style2
+  .desktop-header-style-2 {
+    .col-header-center .search-widget {
+      margin: 0 auto;
+    }
+    .header-custom-html{
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  //style5
+  .desktop-header-style-5{
+    .search-widget, #user_info{
+      margin-top: 0.5rem;
+    }
+    #user_info{
+     text-align: right;
+    }
+    #ps-shoppingcart #blockcart{
+      display: block;
+      text-align: right;
+    }
+  }
+}
+
+#desktop-header-container{
+  position: relative;
+}
+
+/*** MOBILE HEADER ***/
+#mobile-header {
+  display: none;
+  .row-mobile-header {
+    margin-left: rem(-10px);
+    margin-right: rem(-10px);
+  }
+  .row-mobile-buttons {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .col-mobile-logo {
+    padding: 0 rem(10px);
+  }
+  .col-mobile-btn-search, .col-mobile-btn-menu{
+    position: static;
+  }
+  .dropdown-mobile{
+    padding: 1rem;
+  }
+  .mobile-bag-icon{
+    position: relative;
+  }
+  .m-nav-btn {
+    display: inline-block;
+    text-align: center;
+    background: none;
+    border: none;
+    outline: none;
+    transition: $default-transition;
+    cursor: pointer;
+    padding: rem(6px) rem(10px);
+  }
+  .m-nav-btn > i {
+    font-size: rem(32px);
+  }
+  .m-nav-btn > span {
+    display: block;
+    margin-top: rem(8px);
+  }
+
+  &.mobile-header-style-3 {
+    .m-nav-btn {
+      display: block;
+      width: 100%;
+    }
+    .row-mobile-buttons > .col-auto{
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+}
+
+/*** HEADER STICKY ***/
+#desktop-header{
+  &.stuck-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+  }
+}
+
+#iqitmegamenu-wrapper{
+  &.stuck-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+
+    #iqitmegamenu-horizontal{
+    background: none;
+     }
+
+    .container-iqitmegamenu{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .cbp-legend-main{
+      display: none;
+    }
+
+    #sticky-cart-wrapper{
+      z-index: 5005;
+    }
+
+  }
+}
+
+#mobile-header-sticky {
+  &.stuck-down {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+  }
+
+  &.stuck-up {
+    &.visible-stuck-up {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5000;
+    }
+    &.visible-stuck-up-scroll {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5000;
+      transform: translateY(-100%);
+      transition: transform .1s ease-in-out;
+      will-change: transform;
+    }
+    &.visible-stuck-up.visible-stuck-up-scroll {
+      transform: translateY(0);
+      animation-name: slideDown;
+      -webkit-animation-name: slideDown;
+      animation-duration: .1s;
+      -webkit-animation-duration: .1s;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-timing-function: ease-in-out
+    }
+  }
+}
+
+/*** Responsive part ***/
+@include media-breakpoint-down(md) {
+  #desktop-header {
+    display: none;
+  }
+  #mobile-header {
+    display: block;
+  }
+  .sticky-desktop-wrapper{
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #header {
+    //style6, style7(sidebar header)
+    &.desktop-header-style-w-6, &.desktop-header-style-w-7{
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 5002;
+      width: 280px;
+      min-height: 100vh;
+      .header-nav .left-nav, .header-nav .right-nav{
+        flex-basis: 100%;
+      }
+      .col-header-left, .col-header-center{
+        margin-bottom: 1.5rem;
+      }
+      #header-search-btn .dropdown-search, #ps-shoppingcart.dropdown #blockcart-content{
+        left: 0;
+        right: auto;
+      }
+      .header-custom-html{
+        margin-bottom: .6rem;
+      }
+
+      .cbp-vertical-title{
+        display: none !important;
+      }
+      #cbp-hrmenu1{
+        margin: 2rem 0;
+      }
+    }
+
+    //style7
+    &.desktop-header-style-w-7{
+      #user_info{
+        margin-top: .6rem;
+        padding-left: 1rem;
+      }
+      #search_widget{
+        margin-top: 1rem;
+      }
+      #search_widget{
+        width: 100%;
+      }
+    }
+  }
+
+  .body-desktop-header-style-w-6, .body-desktop-header-style-w-7{
+    > main{
+      padding-left: 280px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  #mobile-header {
+    .m-nav-btn > i {
+      font-size: rem(24px);
+    }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}

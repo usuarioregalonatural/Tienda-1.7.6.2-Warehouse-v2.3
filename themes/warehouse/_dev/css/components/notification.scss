@@ -1,0 +1,141 @@
+/* Floating notification */
+.ns-box{
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 999999;
+  max-width: 380px;
+  background: #2fb4d1;
+  color: #fff;
+  padding: 1rem;
+  transition: all .3s ease;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 250px;
+}
+.ns-box.ns-show{
+  visibility: visible;
+  opacity: 1;
+}
+
+.ns-box.ns-hide{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ns-effect-thumbslider .ns-box-inner {
+  overflow: hidden;
+}
+
+.ns-effect-thumbslider .ns-thumb-wrap{
+  float: left;
+  width: 80px;
+}
+.ns-effect-thumbslider .ns-thumb {
+  z-index: 2;
+  position: relative;
+}
+
+.ns-effect-thumbslider .ns-content {
+  padding-left: 1rem;
+}
+
+.ns-text-only .ns-content  {padding: 0; }
+
+.ns-effect-thumbslider.ns-show .ns-content,
+.ns-effect-thumbslider.ns-hide .ns-content {
+  -webkit-animation-name: animSlide;
+  animation-name: animSlide;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.7,0,0.3,1);
+  animation-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.ns-effect-thumbslider.ns-show .ns-content {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.ns-effect-thumbslider.ns-hide .ns-content {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+
+.ns-effect-thumbslider.ns-show .ns-delivery,
+.ns-effect-thumbslider.ns-hide .ns-delivery {
+  -webkit-animation-name: animSlideDown;
+  animation-name: animSlideDown;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.7,0,0.3,1);
+  animation-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.ns-effect-thumbslider.ns-show .ns-delivery {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.ns-effect-thumbslider.ns-hide .ns-delivery {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+
+
+
+@-webkit-keyframes animSlide {
+  0% { opacity: 0; -webkit-transform: translate3d(-100%,0,0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0,0,0);}
+}
+
+@keyframes animSlide {
+  0% { opacity: 0; -webkit-transform: translate3d(-100%,0,0); transform: translate3d(-100%,0,0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes animSlideDown {
+  0% { opacity: 0; -webkit-transform: translate3d(0,100%,0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0,0,0);}
+}
+
+@keyframes animSlideDown {
+  0% { opacity: 0; -webkit-transform: translate3d(0,100%,0); transform: translate3d(0,100%,0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+
+.ns-effect-thumbslider.ns-show .ns-thumb,
+.ns-effect-thumbslider.ns-hide .ns-thumb {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.ns-effect-thumbslider.ns-hide .ns-thumb {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+//danger
+.ns-box-danger{
+  background-color: #f2dede !important;
+  color: #a94442 !important;
+}
+

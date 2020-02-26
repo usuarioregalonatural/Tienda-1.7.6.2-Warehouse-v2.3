@@ -1,0 +1,30 @@
+{
+    "name": "packlink/integration-core",
+    "description": "Packlink integrations core library",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+      "php": ">=5.3.29"
+    },
+    "autoload": {
+        "psr-4": {
+            "Logeecom\\Infrastructure\\": "src/Infrastructure",
+            "Packlink\\BusinessLogic\\": "src/BusinessLogic"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Logeecom\\Tests\\Infrastructure\\": "tests/Infrastructure",
+            "Logeecom\\Tests\\BusinessLogic\\": "tests/BusinessLogic"
+        }
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^4.8",
+      "codacy/coverage": "dev-master"
+    },
+  "config": {
+    "platform": {
+      "php": "5.3.29"
+    }
+  }
+}

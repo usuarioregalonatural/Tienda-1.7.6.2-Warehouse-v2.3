@@ -1,0 +1,2 @@
+*ERROR* 	v1.7.6.2	2020/01/05 - 12:13:10: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database 'regalonatural' at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2020/01/05 - 12:13:34: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database 'regalonatural' at line 127 in file classes/db/DbPDO.php

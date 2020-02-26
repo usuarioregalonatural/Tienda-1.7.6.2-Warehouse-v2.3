@@ -1,0 +1,9 @@
+*ERROR* 	v1.7.6.2	2019/12/14 - 12:58:49: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2019/12/14 - 12:58:50: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2019/12/14 - 13:02:30: Table 'regalonatural.ps_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = 'www.regalando1sonrisa.org' OR su.domain_ssl = 'www.regalando1sonrisa.org')
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 769 in file classes/db/Db.php

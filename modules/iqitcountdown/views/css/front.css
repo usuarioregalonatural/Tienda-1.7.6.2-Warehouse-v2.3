@@ -1,0 +1,20 @@
+.price-countdown{
+	display: inline-block;
+	background: #282828;
+	color: #fff;
+	padding: .2rem .6rem;
+	margin-top: .8rem;
+}
+
+.price-countdown-title{
+	border-right: 1px solid rgba(255, 255, 255, 0.27);
+	padding-right: 0.5rem;
+	margin-right: 0.3rem;
+}
+.price-countdown i{
+	margin-right: 0.2rem;
+}
+
+.price-countdown .count-down-timer{
+	display: inline-block;
+}

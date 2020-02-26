@@ -1,0 +1,58 @@
+//maintenance-page
+
+#maintenance-page {
+  background: $mcs_background;
+  @include st2(color, $mcs_text_color);
+}
+
+#maintenance-page a, #maintenance-page a:link {
+  @include st2(color, $mcs_text_color);
+}
+
+@if $mcs_layout == 2 {
+  #maintenance-header {
+    @include st2(background, $mcs_header_bg);
+    @include st2(color, $mcs_header_txt);
+  }
+
+  #maintenance-header a, #maintenance-header a:link {
+    @include st2(color, $mcs_header_txt);
+  }
+}
+
+@if $mcs_newsletter == 1 {
+  .maintenance-page-newsletter .maintenance-page-newsletter-btn {
+    @include st2(background, $mcs_button_bg);
+    @include st2(color, $mcs_button_txt);
+    &:hover {
+      @include st2(background, $mcs_button_bg_h);
+      @include st2(color, $mcs_button_txt_h);
+    }
+  }
+
+  .maintenance-page-newsletter input[type=email] {
+    border: $mcs_form_border;
+    @include st2(background, $mcs_form_bg);
+    @include st2(color, $mcs_form_txt);
+  }
+
+  .maintenance-page-newsletter input[type=email]::-webkit-input-placeholder {
+    @include st2(color, $mcs_form_txt);
+  }
+  .maintenance-page-newsletter input[type=email]::-moz-placeholder {
+    @include st2(color, $mcs_form_txt);
+  }
+  .maintenance-page-newsletter input[type=email]:-ms-input-placeholder {
+    @include st2(color, $mcs_form_txt);
+  }
+  .maintenance-page-newsletter input[type=email] :-moz-placeholder {
+    @include st2(color, $mcs_form_txt);
+  }
+
+
+}
+
+
+
+
+

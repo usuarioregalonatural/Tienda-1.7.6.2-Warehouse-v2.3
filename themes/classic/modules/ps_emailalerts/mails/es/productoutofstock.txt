@@ -1,0 +1,10 @@
+[{shop_name}]({shop_url})
+Hola,
+
+La cobertura de stock es ahora menor que el mínimo especificado en {last_qty}.
+
+Stock disponible: {qty}
+
+Replenish your inventory, go to the Catalog > Stocks section of your back office to manage your stock.
+
+[{shop_name}]({shop_url}) desarrollado con [PrestaShop™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

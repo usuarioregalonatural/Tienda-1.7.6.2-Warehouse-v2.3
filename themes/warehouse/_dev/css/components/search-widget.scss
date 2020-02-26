@@ -1,0 +1,141 @@
+.search-widget {
+  form {
+    position: relative;
+  }
+  .form-search-control {
+    padding: .8rem 1rem;
+    padding-right: 2rem;
+  }
+  .search-btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    z-index: 4;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0 1em;
+  }
+}
+
+#header-search-btn {
+  .dropdown-search {
+    padding: 1.5rem;
+    min-width: 350px;
+    max-width: 400px;
+    right: 0;
+    left: auto;
+  }
+
+  .fullscreen-search {
+    min-height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    -js-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center !important;
+    transition: all .3s $smooth-transition-timing;
+
+    #search_widget {
+      margin: 0 auto;
+      width: 80%;
+      z-index: 2;
+      position: relative;
+      -webkit-transform: scale(.8);
+      transform: scale(.8);
+      opacity: 0;
+      transition: all .3s $smooth-transition-timing;
+    }
+    #fullscreen-search-backdrop{
+      z-index: 1;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .form-search-control {
+      font-size: 1.5rem;
+      padding: 1.7rem 1.5rem;
+    }
+    .search-btn {
+      font-size: 1.5rem;
+    }
+    .autocomplete-suggestions {
+      position: static;
+      max-height: 450px;
+    }
+
+    .autocomplete-suggestion img {
+      margin-right: 1rem;
+      max-width: 100%;
+    }
+  }
+}
+
+#header-search-btn.show {
+  .fullscreen-search {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #search_widget {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+//autocomplete
+.autocomplete-suggestions {
+  text-align: left;
+  cursor: default;
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #fff;
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, .1);
+  width: 100%;
+  top: 100%;
+
+  /* core styles should not be changed */
+  position: absolute;
+  display: none;
+  z-index: 999999;
+  max-height: 254px;
+  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.autocomplete-suggestion {
+  padding: .6rem;
+  position: relative;
+  white-space: initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: #333;
+}
+
+.autocomplete-suggestion b {
+  font-weight: normal;
+  color: #1f8dd6;
+}
+
+.autocomplete-suggestion img {
+  margin-right: .6rem;
+  max-width: 60px;
+}
+
+.autocomplete-suggestion .product-price {
+  display: block;
+}
+
+.autocomplete-suggestion-show-all{
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
+  background: $gray-light-bg;
+  border-top: solid 1px rgba(105, 105, 105, 0.13);
+}

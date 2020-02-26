@@ -1,0 +1,85 @@
+/**
+* 2007-2015 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2015 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+ul.videos_list { list-style: none }
+.video_item { border: 1px solid #d3d8db; margin: 5px 0; padding: 20px 0; }
+.video_item .row-fluid { width: 98%; }
+.video_item textarea.autoload_rte_anproductvideos.sort_started { height: 195px; }
+.video_btnsave { margin: 0 5px 0 0; }
+.alert.nodisplay { display: none; }
+
+
+div#fieldset_2_1{
+    display:none;
+}
+div#tabs{
+    margin: 0;
+}
+div#an_regenerator{
+    width: 100%;
+}
+.an_tabs_btn{
+    width:100%;
+}
+#tabs.an_productfields-style{
+    margin-bottom: 20px;
+}
+#tabs.an_productfields-style button,
+#tabs.an_productfields-style a{
+    border-radius: 0;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: -1px;
+    border-right: none;
+    border-left: none;
+    outline:none;
+    padding: 8px 11px;
+}
+.bootstrap #tabs.an_productfields-style button:focus{
+    color: #fff;
+    background-color: #00aff0;
+    border-color: #008abd;
+}
+.an_productfields-style form.an_productfields {
+    width: 100%;
+}
+.an_productfields-style #configuration_form .panel{
+    margin-bottom: 0;
+}
+.an_productfields-style .tabswrapper {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #DEDEDE;
+}
+#an_regenerator{
+    margin-top: 10px;
+}
+.an_theme-text-menu {
+    padding: 10px 15px;
+    background-color: #fff;
+    margin-top: 10px;
+}

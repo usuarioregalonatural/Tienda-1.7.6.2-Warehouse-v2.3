@@ -1,0 +1,114 @@
+.cart-grid {
+  margin-bottom: 1rem;
+}
+
+.cart-grid-body {
+
+}
+.cart-items {
+  margin-bottom: 3rem;
+}
+
+.cart-item-header{
+  padding: 1rem 0;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid $gray-light;
+  border-top: 1px solid $gray-light;
+}
+
+.cart-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid $gray-light;
+
+  .product-image{
+    max-width: 125px;
+  }
+
+  .product-line-grid-right{
+    text-align: center;
+  }
+
+  .product-line-info-secondary{
+    line-height: 1;
+  }
+  .bootstrap-touchspin{
+    max-width: 75px;
+    margin: 0 auto;
+    min-height: 40px;
+    input{
+      text-align: center;
+    }
+  }
+}
+
+.block-promo {
+  .promo-code {
+    .alert-danger {
+      display: none;
+    }
+  }
+  .cart-voucher-area{
+    padding: 1rem;
+    background: $gray-light-bg;
+  }
+  .promo-highlighted{
+    margin: 0.3rem 0 0 0;
+  }
+  .voucher-icon{
+    padding-left: 0;
+    padding-right: 0.8rem;
+    cursor: default;
+  }
+}
+
+/** CART RIGHT **/
+.cart-grid-right {
+  hr {
+    margin: 0;
+  }
+  .cart-summary{
+    margin-bottom: 1rem;
+  }
+  .promo-discounts {
+    margin-bottom: 0;
+    .cart-summary-line {
+      .label {
+        .code {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .iqitfreedeliverycount{
+    margin: 1rem 0 0 0;
+  }
+}
+
+
+.cart-summary-line {
+  @include clearfix;
+  clear: both;
+  .value {
+    float: right;
+  }
+  &.cart-total{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+
+}
+
+@include media-breakpoint-down(xs) {
+
+}
+
+@media (max-width: 360px) {
+
+}

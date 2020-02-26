@@ -1,0 +1,106 @@
+/*** Style mixins ***/
+
+//block-title-3
+@mixin block-title-3 {
+  -js-display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@mixin block-title-3-before-after {
+  content: "";
+  display: block;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/*** Variables mixins and functions ***/
+@mixin font-size($sizeValue: 1.6) {
+  font-size: $sizeValue + rem;
+}
+
+@mixin st($key, $value, $suffix) {
+  $value: null !default;
+
+  @if $value != null {
+    #{$key}: $value + $suffix;
+  }
+}
+
+@mixin st2($key, $value) {
+  $value: null !default;
+
+  @if $value != null {
+    #{$key}: #{$value};
+  }
+}
+
+@mixin calculatePercent($key, $value) {
+  $value: null !default;
+
+  @if $value != null {
+    #{$key}: #{$value * 1%};
+  }
+}
+
+@function is-number($value) {
+  @return type-of($value) == 'number';
+}
+
+@function titleBottomCalc($pxval) {
+  $pxval: null !default;
+
+  @if $pxval != null {
+    @return (-$pxval / 2) * 1px;
+  }
+  @return 0px;
+
+}
+
+@function rem($pxval) {
+  $pxval: null !default;
+  $typo_bfont_size: 16 !default;
+
+  @if $pxval != null {
+    @if is-number($pxval) {
+      @return ($pxval / $typo_bfont_size) * 1rem;
+    }
+  }
+  @return null;
+
+}
+
+@function remMinus($pxval, $minus) {
+  $pxval: null !default;
+  $typo_bfont_size: 16 !default;
+  $minus: 0 !default;
+
+  @if $pxval != null {
+    $val: (($pxval / $typo_bfont_size) - 1);
+    @if $val < 0 {
+      @return 0
+    }
+    @else {
+      @return $val * 1rem;
+    }
+  }
+  @return null;
+}
+
+
+
+
+
+

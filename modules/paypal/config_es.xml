@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>paypal</name>
+    <displayName><![CDATA[PayPal]]></displayName>
+    <version><![CDATA[5.1.0]]></version>
+    <description><![CDATA[Aprovecha las ventajas de la plataforma PayPal Complete Payments y haz crecer tu negocio en Internet, en dispositivos m&oacute;viles e internacionalmente. Acepta pagos con tarjeta de cr&eacute;dito o d&eacute;bito y con PayPal.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[¿Seguro que quieres eliminar tus datos?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

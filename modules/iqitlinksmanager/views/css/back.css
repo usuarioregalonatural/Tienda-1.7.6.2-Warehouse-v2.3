@@ -1,0 +1,87 @@
+.link-selector{
+	border: 1px solid #EFF1F2;
+	padding: 0px;
+	margin:  10px;
+}
+
+.link-selector > .title{
+    background: #EFF1F2;
+    padding: 14px 20px;
+    font-size: 120%;
+}
+
+.link-selector > ul{
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.link-selector ul li{
+	padding: 2px 15px;
+    border: 1px solid #eee;
+    position: relative;
+    top: -1px;
+    border-bottom: 0px;
+}
+.link-selector ul li:hover{
+	background: #fdfdfd;
+}
+.link-selector ul li:last-child{
+	 border-bottom: 1px solid #eee;
+}
+.link-selector > ul > li.list-subtitle{
+	background: #f8f8f8;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+
+.link-selector .drag-handle{
+	font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: move;
+    cursor: -webkit-grabbing;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+.link-selector .js-remove{
+	cursor: pointer;
+    color: #C45C67;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    font-size: 18px;
+}
+#repository-list{
+	max-height: 500px;
+    overflow-y: scroll;
+}
+#repository-list .js-remove{
+	display: none;
+}
+#repository-list .cms-category{
+    font-weight: bold;
+}
+#selected-list{
+	min-height: 100px;
+}
+.drag-info{
+background: #f8f8f8;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#add-custom-link{
+    width: 100%;
+    display: block;
+}
+
+#selected-list .sortable-ghost{
+background: #f8f8f8;
+margin-left: 0px !important;
+}

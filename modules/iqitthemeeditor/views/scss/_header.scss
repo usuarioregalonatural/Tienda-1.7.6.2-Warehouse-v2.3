@@ -1,0 +1,217 @@
+//header-wrapper
+#header {
+  background: $hw_background;
+  @if ($h_layout != 6) and ($h_layout != 7) {
+    border-top: $hw_border_t;
+    border-bottom: $hw_border_b;
+  }
+
+  @if ($h_layout == 6) or ($h_layout == 7) {
+    border-right: $hw_border_r;
+  }
+
+  @if $hw_boxshadow != none {
+    box-shadow: $hw_boxshadow;
+  }
+
+  @if $hw_width == 'fullwidth' {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  @if $rm_breakpoint != 1 {
+    @media (min-width: 992px) {
+      @include st2(padding-bottom, rem($hw_padding_tb));
+    }
+  }
+}
+
+.sticky-desktop-wrapper #desktop-header.stuck-header {
+  background: $hw_background;
+  border-bottom: $hw_border_b;
+  @if $hw_boxshadow != none {
+    box-shadow: $hw_boxshadow;
+  }
+}
+
+
+@if $h_absolute == 1 {
+  @media (min-width: 992px) {
+  #index #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include st2(background, $h_absolute_wrapper_bg);
+  }
+}
+}
+
+//top-bar
+#header .header-nav {
+  @include st2(color, $tb_text_color);
+  background: $tb_background;
+  border-bottom: $tb_border;
+  @include st2(padding-top, rem($tb_padding));
+  @include st2(padding-bottom, rem($tb_padding));
+  @include st2(font-size, rem($tb_font_size));
+
+  @if $tb_boxshadow != none {
+    box-shadow: $tb_boxshadow;
+  }
+
+  @if $tb_status != 1 {
+    display: none !important;
+  }
+
+  a {
+    @include st2(color, $tb_link_color);
+    &:hover {
+      @include st2(color, $tb_link_h_color);
+    }
+  }
+
+  //social icons
+  .social-links._topbar {
+    @include st2(font-size, rem($tb_social_size));
+
+    a:not(:hover) {
+      @if $tb_social_c_t == 1 {
+        @include st2(color, $tb_social_txt !important);
+      }
+    }
+    a:hover {
+      @if $tb_social_c_t_h == 1 {
+        @include st2(color, $tb_social_txt_h !important);
+      }
+    }
+  }
+
+}
+
+//header
+.header-top {
+  //background: $h_background;
+  @include st2(padding-top, rem($h_padding));
+  @include st2(padding-bottom, rem($h_padding));
+  @include st2(color, $h_text_color);
+
+  a:not(.btn):not(.nav-link) {
+    @include st2(color, $h_link_color);
+    &:hover {
+      @include st2(color, $h_link_h_color);
+    }
+  }
+
+  //search input
+  .form-search-control {
+    @include st2(background, $h_search_input_bg);
+    @include st2(color, $h_search_input_txt);
+    border: $h_search_input_border;
+  }
+  input.form-search-control::-webkit-input-placeholder {
+    @include st2(color, $h_search_input_txt);
+  }
+  input.form-search-control:-moz-placeholder {
+    @include st2(color, $h_search_input_txt);
+  }
+  input.form-search-control:-ms-input-placeholder {
+    @include st2(color, $h_search_input_txt);
+  }
+  input.form-search-control:-moz-placeholder {
+    @include st2(color, $h_search_input_txt);
+  }
+  .search-btn {
+    @include st2(color, $h_search_input_txt);
+  }
+
+  //header-btn
+  .header-btn-w .header-btn {
+    > .icon {
+      @include st2(font-size, rem($h_icons_size));
+      display: block;
+    }
+    @if $h_icons_label != 1 {
+       .title {
+        display: none !important;
+      }
+    }
+  }
+
+  //cart trigger
+  .header-cart-default a.cart-toogle {
+    @include st2(background, $h_cart_trigger_bg);
+    @include st2(color, $h_cart_trigger_txt);
+    @include st2(padding, rem($h_cart_trigger_padding) rem($h_cart_trigger_padding));
+    &:hover {
+      @include st2(color, $h_cart_trigger_txt);
+    }
+  }
+
+  @if $h_cart_type == two {
+    //twoline default cart
+    .header-cart-default {
+      .cart-toogle > .icon {
+        font-size: 2.8rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .cart-toogle > .info-wrapper {
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        > .cart-toggle-details, > .title {
+          display: block;
+        }
+        > .title {
+          opacity: .8;
+        }
+        > .cart-toggle-details {
+          font-weight: bold;
+        }
+
+        .cart-separator {
+          display: none;
+        }
+      }
+    }
+  }
+
+  a.header-cart-btn:not(:hover) {
+    @include st2(color, $h_cart_trigger_txt);
+  }
+}
+
+
+.stuck-header{
+  .header-top{
+    @include st2(padding-top, rem($h_sticky_padding));
+    @include st2(padding-bottom, rem($h_sticky_padding));
+  }
+}
+.sticky-desktop-wrapper #desktop-header.stuck-header, .stuck-menu{
+  @include st2(background, $h_sticky_bg);
+}
+
+@if $h_sticky == header {
+  .header-top {
+    transition: padding .3s ease;
+  }
+}
+
+
+//cart qty small circle
+.cart-products-count-btn {
+  @include st2(background, $h_cart_trigger_qty_bg);
+  @include st2(color, $h_cart_trigger_qty_txt);
+}
+
+
+.desktop-header-style-1, .desktop-header-style-2 {
+  .search-widget {
+    @include calculatePercent(max-width, $h_search_width);
+  }
+}
+
+

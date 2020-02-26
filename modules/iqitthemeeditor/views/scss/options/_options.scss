@@ -1,0 +1,81 @@
+@import 'typo';
+@import 'cart';
+@import 'buttons';
+@import 'breadcrumb';
+@import 'forms';
+@import 'modals';
+@import 'label';
+
+//preloader
+#page-preloader {
+
+  @include st2(background,  $op_preloader_bg);
+
+  @if $op_preloader == "pre" {
+    .loader-wrapper {
+      @include st(font-size, $op_preloader_size, px);
+    }
+
+    .loader-1 {
+      @include st2(border-color, rgba($op_preloader_icon_color, .2));
+      @include st2(border-top-color, $op_preloader_icon_color);
+    }
+
+    .loader-2 {
+      @include st2(background, rgba($op_preloader_icon_color, .3));
+    }
+
+    .loader-2:after, .loader-2:before {
+      @include st2(background, rgba($op_preloader_icon_color, .3));
+    }
+
+    @keyframes loader-2 {
+      50% {
+        @include st2(background, $op_preloader_icon_color);
+      }
+    }
+  }
+}
+
+//back-to-top
+#back-to-top {
+  @include st2(background, $op_to_top_bg_color);
+  @include st2(color, $op_to_top_link_color);
+
+  @if $op_to_top_style != 1 {
+    display: none;
+  }
+}
+
+#back-to-top:hover {
+  @include st2(background, $op_to_top_bg_h_color);
+  @include st2(color, $op_to_top_link_h_color);
+}
+
+//custom scrollbar
+@if $op_scrollbar == 1 {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @include st2(background, $op_scrollbar_color);
+  }
+
+  ::-webkit-scrollbar-track {
+    @include st2(background, $op_scrollbar_color_bg);
+  }
+
+  body {
+    @include st2(scrollbar-face-color, $op_scrollbar_color);
+    @include st2(scrollbar-track-color, $op_scrollbar_color_bg);
+  }
+
+}
+
+
+
+
+
+

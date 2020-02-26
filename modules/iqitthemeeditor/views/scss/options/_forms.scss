@@ -1,0 +1,102 @@
+/*** Text fields ***/
+
+.form-control{
+  @include st2(background-color, $form_input_bg);
+  @include st2(color, $form_input_txt);
+  border: $form_input_border;
+  @if $form_input_boxshadow != none {
+    box-shadow: $form_input_boxshadow;
+  }
+}
+.custom-select2, .custom-select2 option{
+  @include st2(background-color, $form_input_bg);
+}
+.custom-select2:after{
+  @include st2(color, $form_input_txt);
+}
+
+.bootstrap-touchspin .btn-touchspin{
+  @include st2(background-color, $form_input_bg);
+  @include st2(color, $form_input_txt);
+  border: $form_input_border;
+}
+
+.bootstrap-touchspin .btn-touchspin:hover{
+  @include st2(color, $form_input_txt);
+  @include st2(background, $form_input_bg_h);
+}
+
+.form-control::-webkit-input-placeholder {
+  @include st2(color, $form_input_txt);
+}
+.form-control::-moz-placeholder {
+  @include st2(color, $form_input_txt);
+}
+.form-control:-ms-input-placeholder {
+  @include st2(color, $form_input_txt);
+}
+.form-control:-moz-placeholder {
+  @include st2(color, $form_input_txt);
+}
+
+.form-control:focus{
+  @include st2(color, $form_input_txt);
+  @include st2(background, $form_input_bg_h);
+  @include st2(border-color, $form_input_border_c_h);
+  @if $form_input_boxshadow_h != none {
+    box-shadow: $form_input_boxshadow_h;
+  }
+}
+
+.custom-select2:focus-within{
+  @include st2(background, $form_input_bg_h);
+}
+
+/*** Radio buttons and checkboxes ***/
+
+.custom-checkbox input[type=checkbox]+span .checkbox-checked{
+    @include st2(color, $form_radio_checked);
+}
+.custom-radio input[type=radio]:checked+span{
+  @include st2(background-color, $form_radio_checked);
+}
+.custom-checkbox input[type=checkbox]+span:not(.color), .custom-radio{
+  @include st2(background, $form_radio_bg);
+  @include st2(color, $form_radio_checked);
+  @include st2(border-color, $form_radio_border);
+}
+
+/*** Dropdowns ***/
+.dropdown-menu, .autocomplete-suggestions{
+  @include st2(background, $form_dropdown_bg);
+  border: $form_dropdown_border;
+  @if $form_dropdown_boxshadow != none {
+    box-shadow: $form_dropdown_boxshadow;
+  }
+  .dropdown-item{
+    @include st2(color, $form_dropdown_txt+'!important');
+    border-bottom: $form_dropdown_border;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    $form_dropdown_txt: null !default;
+    @if $form_dropdown_txt != null {
+      background: rgba( $form_dropdown_txt, .05);
+    }
+  }
+}
+
+/*** Tooltips ***/
+.tooltip-inner{
+  @include st2(background, $form_tooltip_bg);
+  @include st2(color, $form_tooltip_txt);
+}
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner:before, .tooltip.tooltip-top .tooltip-inner:before,
+.bs-tooltip-auto[x-placement^=top] .arrow:before, .bs-tooltip-top .arrow:before{
+  @include st2(border-top-color, $form_tooltip_bg);
+}
+
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+  @include st2(border-bottom-color, $form_tooltip_bg);
+}

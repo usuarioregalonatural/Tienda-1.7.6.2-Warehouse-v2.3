@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/es/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/es/blog/feed.xml</link>
+    <description></description>
+    <language>es</language>
+     <atom:link href="https://www.prestashop.com/es/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>¿Cómo estructurar y mejorar la navegabilidad web en mi eCommerce?</title>
+    <link>https://www.prestashop.com/es/blog/mejorar-navegabilidad-web</link>
+    <description>¿Sientes que la navegabilidad web de tu tienda no es la deseable y, debido a ello, dejas de ganar ventas?</description>
+     <pubDate>Mon, 17 Feb 2020 17:12:02 +0100</pubDate>
+ <dc:creator>Miguel de Pineda</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/mejorar-navegabilidad-web</guid>
+  </item>
+  <item>
+    <title>7 Mejores módulos para ahorrar tiempo en las tareas de tu tienda PrestaShop</title>
+    <link>https://www.prestashop.com/es/blog/modulos-ahorrar-tiempo</link>
+    <description>Existen muchos módulos en PrestaShop para realizar casi cualquier tipo de tarea o función que requieras para tu eCommerce, pero:</description>
+     <pubDate>Mon, 17 Feb 2020 09:41:56 +0100</pubDate>
+ <dc:creator>Ismael Ruiz</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/modulos-ahorrar-tiempo</guid>
+  </item>
+  <item>
+    <title>¿Qué es el Quality Score de Google Ads, para qué sirve y cómo funciona?</title>
+    <link>https://www.prestashop.com/es/blog/quality-score-google-ads</link>
+    <description>¿Necesitas mejorar tus campañas de Google Ads y aún no sabes por dónde empezar? Muy probablemente necesites revisar si el Quality Score es el más óptimo.</description>
+     <pubDate>Tue, 11 Feb 2020 18:17:22 +0100</pubDate>
+ <dc:creator>Jose Facchin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/quality-score-google-ads</guid>
+  </item>
+  <item>
+    <title>¿Cómo hacer SEO en PrestaShop para posicionar categorías y fichas de producto?</title>
+    <link>https://www.prestashop.com/es/blog/seo-prestashop</link>
+    <description>Hoy en día, si queremos posicionar en buscadores y mejorar el SEO de nuestra tienda online en PrestaShop para así ganar más visitas y generar mayores ventas, tendremos que invertir</description>
+     <pubDate>Tue, 11 Feb 2020 13:38:14 +0100</pubDate>
+ <dc:creator>Jose Facchin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/seo-prestashop</guid>
+  </item>
+  <item>
+    <title>¿Qué es un calendario editorial y por qué tener uno para el blog de tu eCommerce?</title>
+    <link>https://www.prestashop.com/es/blog/calendario-editorial</link>
+    <description>“Me encanta que los planes salgan bien”.</description>
+     <pubDate>Tue, 11 Feb 2020 12:11:23 +0100</pubDate>
+ <dc:creator>Emilio de la Barreda Martin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/calendario-editorial</guid>
+  </item>
+  <item>
+    <title>¿Qué es una propuesta de valor y por qué tu eCommerce debe tenerla?</title>
+    <link>https://www.prestashop.com/es/blog/propuesta-de-valor</link>
+    <description>Si eres dueño/dueña de un negocio online y has estado informándote sobre cómo puedes conseguir que los usuarios elijan tu eCommerce antes que cualquier otro, probablemente hayas escuchado hablar de</description>
+     <pubDate>Mon, 10 Feb 2020 12:26:14 +0100</pubDate>
+ <dc:creator>Mariela Quiroga</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/propuesta-de-valor</guid>
+  </item>
+  <item>
+    <title>¿Qué es una Wish List y cómo sacarle partido para conseguir más clientes?</title>
+    <link>https://www.prestashop.com/es/blog/wish-list</link>
+    <description>¿Conoces el concepto de &quot;wish list&quot; y las ventajas de implementar esta posibilidad en tu eCommerce?</description>
+     <pubDate>Wed, 05 Feb 2020 17:21:53 +0100</pubDate>
+ <dc:creator>Jose Facchin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/wish-list</guid>
+  </item>
+  <item>
+    <title>SEO local: ¿Cómo posicionar la web de tu eCommerce en el &amp;quot;Pack de local&amp;quot;?</title>
+    <link>https://www.prestashop.com/es/blog/seo-local</link>
+    <description>Saber exactamente qué es el SEO local y, más concretamente, aplicar las técnicas correctas para tu negocio, te permitirá posicionarlo de forma óptima en Internet a medio/largo plaz</description>
+     <pubDate>Mon, 03 Feb 2020 12:01:40 +0100</pubDate>
+ <dc:creator>Roberto Flores</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/seo-local</guid>
+  </item>
+  <item>
+    <title>8 Técnicas de Growth Hacking originales para aplicar en tu negocio online</title>
+    <link>https://www.prestashop.com/es/blog/8-ejemplos-de-growth-hacking-aplicado-ecommerce</link>
+    <description>¿Sabes que se pueden aplicar algunas técnicas de Growth Hacking a tu negocio que pueden hacer que tenga un crecimiento mucho mayor del que actualmente pueda tener?</description>
+     <pubDate>Mon, 03 Feb 2020 06:59:21 +0100</pubDate>
+ <dc:creator>Víctor Campuzano</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/8-ejemplos-de-growth-hacking-aplicado-ecommerce</guid>
+  </item>
+  <item>
+    <title>¿Qué es la comunicación visual y cómo puede mejorar la atención a tus clientes?</title>
+    <link>https://www.prestashop.com/es/blog/comunicacion-visual</link>
+    <description>¿Sabes qué es la comunicación visual y cómo puede mejorar la imagen y eficacia de tu negocio online?</description>
+     <pubDate>Fri, 31 Jan 2020 13:17:06 +0100</pubDate>
+ <dc:creator>Ismael Ruiz</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/comunicacion-visual</guid>
+  </item>
+  </channel>
+</rss>

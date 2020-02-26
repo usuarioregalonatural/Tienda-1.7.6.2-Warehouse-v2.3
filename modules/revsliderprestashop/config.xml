@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>revsliderprestashop</name>
+	<displayName><![CDATA[Revolution Slider.]]></displayName>
+	<version><![CDATA[5.4.2]]></version>
+	<description><![CDATA[Revolution Slider - Premium responsive Prestashop slider]]></description>
+	<author><![CDATA[smartdatasoft]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

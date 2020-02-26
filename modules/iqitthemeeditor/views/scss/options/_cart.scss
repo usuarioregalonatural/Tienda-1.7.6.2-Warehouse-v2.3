@@ -1,0 +1,27 @@
+#blockcart-content{
+  @include st2(background, $cart_bg);
+  @include st2(color, $cart_inner_text);
+  border: $cart_border;
+  @if $cart_boxshadow != none {
+    box-shadow: $cart_boxshadow;
+  }
+
+  a:not(.btn) {
+    @include st2(color, $cart_inner_text);
+    &:hover {
+      @include st2(color, $cart_inner_text);
+    }
+  }
+  .cart-products > li, .cart-subtotals{
+    @include st2(border-color, $cart_inner_border);
+  }
+
+
+
+  .cart-products{
+    &::-webkit-scrollbar-thumb{
+      @include st2(background-color, $cart_inner_border);
+    }
+  }
+
+}

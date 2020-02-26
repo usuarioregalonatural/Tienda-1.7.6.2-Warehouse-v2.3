@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>iqitmegamenu</name>
+    <displayName><![CDATA[IQITMEGAMENU -  most powerfull navigation for Prestashop]]></displayName>
+    <version><![CDATA[1.2.0]]></version>
+    <description><![CDATA[With drag and drop submenu creator]]></description>
+    <author><![CDATA[IQIT-COMMERCE.COM]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

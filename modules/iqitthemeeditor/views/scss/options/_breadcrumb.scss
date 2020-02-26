@@ -1,0 +1,33 @@
+#wrapper .breadcrumb{
+  background: $bread_background;
+  @include st2(padding-top, rem($bread_padding_tb));
+  @include st2(padding-bottom, rem($bread_padding_tb));
+  @include st2(padding-left, rem($bread_padding_lr));
+  @include st2(padding-right, rem($bread_padding_lr));
+  @include st2(margin-top, rem(-$cw_padding_tb));
+  @include st2(margin-bottom, rem($cw_padding_tb));;
+
+  @include st2(font-size, rem($bread_font_size));
+  @include st2(letter-spacing, rem($bread_font_spacing));
+  @include st(font-style, $bread_font_style, '');
+  @include st(font-weight, $bread_font_weight, '');
+  @include st(text-transform, $bread_font_uppercase, '');
+
+  @if $bread_boxshadow != none {
+    box-shadow: $bread_boxshadow;
+  }
+
+  @if $bread_status != 1 {
+    display: none !important;
+  }
+
+  li:after{
+    @include st2(color, $bread_txt);
+  }
+
+  a{
+    @include st2(color, $bread_txt);
+  }
+
+
+}

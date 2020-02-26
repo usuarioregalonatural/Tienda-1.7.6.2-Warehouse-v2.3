@@ -1,0 +1,138 @@
+//block general
+.block-title{
+  position: relative;
+}
+
+#left-column, #right-column {
+  .block {
+    margin-bottom: 2rem;
+  }
+}
+#footer{
+  .block {
+  padding-bottom: 1rem;
+  }
+}
+
+//block with links
+.block-links {
+  ul > li {
+    margin-bottom: 0.4rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  li > ul {
+    margin-top: 0.4rem;
+  }
+  ul > li a {
+    display: inline-block;
+    position: relative;
+    padding-left: 12px;
+
+    &:before {
+      content: "\f105";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      font: normal normal normal 14px/1 FontAwesome;
+      line-height: inherit;
+      font-size: 13px;
+      transition: $default-transition;
+    }
+  }
+  ul > li a:hover{
+    &:before {
+      left: 3px;
+    }
+  }
+}
+
+//blocklinks inline(example in displayNav)
+.block-links-inline{
+  ul{
+    display: inherit;
+  }
+  ul > li {
+    display: inline-block;
+  }
+  ul > li:after{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    background-color: currentColor;
+    opacity: .2;
+  }
+   ul > li:last-child:after{
+    display: none;
+  }
+}
+
+//social links
+.social-links{
+  &._topbar{
+    vertical-align: middle;
+  }
+  > li {
+    display: inline-block;
+    padding: 0 .2em 0 0;
+    &:last-child{
+      padding-right: 0;
+    }
+
+    &.facebook > a, &.facebook > a:hover{
+      color: #3b5998!important;
+    }
+    &.twitter > a, &.twitter > a:hover{
+      color: #23c3fd!important;
+    }
+    &.instagram > a, &.instagram > a:hover{
+      color: #517fa3!important;
+    }
+    &.google > a, &.google > a:hover{
+      color: #c73e2e!important;
+    }
+    &.pinterest > a, &.pinterest > a:hover{
+      color: #cb2027!important;
+    }
+    &.youtube > a, &.youtube > a:hover{
+      color: #e82a34!important;
+    }
+    &.vimeo > a, &.vimeo > a:hover{
+      color: #85c6fc!important;
+    }
+
+  }
+}
+
+//block newsletter-subscription
+.ps-emailsubscription-block{
+  .newsletter-input-group{
+
+  }
+  .input-subscription{
+    background: none;
+    border: none;
+  }
+  .btn-subscribe{
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 0 1rem;
+  }
+}
+
+.psgdpr_consent_checkbox_span{
+ min-width: 16px;
+}
+
+
+

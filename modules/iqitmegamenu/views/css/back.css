@@ -1,0 +1,198 @@
+/**
+* 2007-2014 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2014 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+.tab-content .tab-pane-wrapper{
+	display: none;
+}
+
+.list-wrapper{
+	display: none;	
+}
+
+.tab-content .tab-pane-wrapper.active{
+	display: block;
+}
+#options_tab .active a{
+	z-index: 2;
+	color: white;
+	background-color: #00aff0;
+	border-color: #00aff0;
+}
+#options_tab ul{list-style-type: none;}
+
+.grid_creator{
+}
+.menu_row{
+	background: #F3F3F3;
+	padding: 10px;
+	margin-bottom: 2px;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	min-height: 50px;
+	position: relative;
+	padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.menu_row .menu_column{
+	border: 1px dashed #e6e6e6;
+	min-height: 200px;
+	padding-top: 45px;
+	position: relative;
+	background: #fff;
+	 position: relative;
+  	padding-left: 10px;
+  	padding-right: 10px; 
+}
+#tabs-submenu{
+	border-bottom: 3px solid #e6e6e6;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#buttons-sample{
+		border-bottom: 3px solid #e6e6e6;
+		margin-top: 5px;
+		padding-top: 10px;
+    clear: both;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#buttons-sample .dragger-handle{
+		display: none;
+}
+.menu_column > .action-buttons-container .add-column-action, .menu_row > .action-buttons-container .column-content-edit, .menu_row > .action-buttons-container .duplicate-element-action, #buttons-sample .duplicate-element-action{
+display: none;
+}
+#buttons-sample .action-buttons-container{
+border: 1px dashed #e6e6e6;
+padding: 10px;
+}
+.dragger-handle{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		color: #676767 !important;
+		background-color: #CDCDCD !important;
+		border: none !important;
+		border-radius: 0px !important;
+		font-size: 10px !important;
+}
+.dragger-handle .icon-arrows {
+			font-size: 10px !important;
+}
+.menu-element > .action-buttons-container .btn, .menu-element > .action-buttons-container .btn i {
+    font-size: 10px;
+}
+
+#buttons-sample .add-column-action, #buttons-sample .remove-element-action{
+	display: none;
+}
+.menu_row .action-buttons-container{
+	background: #ECECEC;
+	position: absolute;
+	right: 0px;
+	font-size: 12px !important;
+	top: 0px;
+	padding: 5px;
+	border: 1px solid #e6e6e6;
+}
+
+.menu_row > .action-buttons-container .add-row-action{
+display: none;
+}
+.menu_column > .action-buttons-container .add-column-action{
+display: none;
+}
+
+.menu_column .menu_column .action-buttons-container .add-row-action{
+display: none;
+}
+
+.row-placeholder{
+background: #eeefbb;
+border: 1px dashed #b3b478;
+width: 100%;
+height: 50px;
+}
+.col-placeholder{
+background: #eeefbb;
+border: 1px dashed #b3b478;
+width: 25%;
+height: 100px;
+float: left;
+}
+
+.row-title{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.column-content-modal .style-wrapper{
+background: #F7F7F7;
+margin-top: 20px;
+padding: 10px 20px;
+border: 1px dotted #E5E5E5;
+}
+
+.menu-column-content .modal-dialog {
+max-width: 900px;
+width: 70%;
+min-width: 600px;
+}
+
+.column-checkbox{
+	display: inline-block;
+border: 1px dotted #cecece;
+padding: 2px 4px;
+margin-right: 5px;
+}
+
+#cssstyle-submenu{
+	    border-bottom: 3px solid #e6e6e6;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.menu-collapse-expand{
+	float: right;
+}
+.collapse-menu-expand{
+	margin-top: 30px;
+}
+
+
+.autocomplete-suggestions {
+	text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+
+	/* core styles should not be changed */
+	position: absolute; display: none; z-index: 9999; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.autocomplete-suggestion b { font-weight: normal; color: #1f8dd6; }
+.autocomplete-suggestion.selected { background: #f0f0f0; }

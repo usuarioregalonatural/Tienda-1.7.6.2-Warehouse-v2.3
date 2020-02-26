@@ -1,0 +1,16 @@
+#block-reassurance{
+  margin-bottom: 1rem;
+  img{
+    width: 1.5625rem;
+    margin-right: .625rem;
+  }
+  li{
+    border-bottom: 1px solid $gray-light;
+    &:last-child {
+      border: 0;
+    }
+  }
+  li .block-reassurance-item{
+    padding: .8rem 1rem;
+  }
+}

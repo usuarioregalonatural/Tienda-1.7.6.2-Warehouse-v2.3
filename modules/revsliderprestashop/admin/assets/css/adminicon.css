@@ -1,0 +1,9 @@
+ 
+.icon-AdminRevslider:before{
+	content: "\f03e";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,46 @@
+/*** Secondary button ***/
+.btn-secondary, .btn-secondary.disabled, .btn-secondary:disabled{
+  @include st2(background, $btn_default_bg);
+  @include st2(color, $btn_default_txt);
+  border: $btn_default_border;
+  &:hover, &:focus, :active{
+    @include st2(background, $btn_default_bg_h);
+    @include st2(color, $btn_default_txt_h);
+    @include st2(border-color, $btn_default_border_h);
+  }
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active{
+  @include st2(background, $btn_action_bg_h);
+  @include st2(color, $btn_action_txt_h);
+  @include st2(border-color, $btn_action_border_h);
+}
+
+.btn-outline-secondary, .btn-outline-secondary.disabled, .btn-outline-secondary:disabled{
+  @include st2(background, $btn_default_bg);
+  @include st2(color, $btn_default_txt);
+  border: $form_input_border;
+  &:hover{
+    @include st2(background, $btn_default_bg_h);
+    @include st2(color, $btn_default_txt_h);
+    border: $form_input_border;
+  }
+}
+
+/*** Primary button ***/
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled{
+  @include st2(background, $btn_action_bg);
+  @include st2(color, $btn_action_txt);
+  border: $btn_action_border;
+  &:hover, &:focus, :active{
+    @include st2(background, $btn_action_bg_h);
+    @include st2(color, $btn_action_txt_h);
+    @include st2(border-color, $btn_action_border_h);
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    @include st2(background, $btn_action_bg_h);
+    @include st2(color, $btn_action_txt_h);
+    @include st2(border-color, $btn_action_border_h);
+}

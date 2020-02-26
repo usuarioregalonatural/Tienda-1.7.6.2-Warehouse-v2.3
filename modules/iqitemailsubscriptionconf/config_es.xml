@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>iqitemailsubscriptionconf</name>
+    <displayName><![CDATA[IQITEMAILSUBSCRIPTIONCONF]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Adds confirmation page for Prestashop core module: ps_emailsubscription. Needed for popup subscription or iqitelementor]]></description>
+    <author><![CDATA[IQIT-COMMERCE.COM]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

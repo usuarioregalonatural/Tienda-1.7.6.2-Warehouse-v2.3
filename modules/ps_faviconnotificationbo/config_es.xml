@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_faviconnotificationbo</name>
+    <displayName><![CDATA[Notificaciones de Pedidos sobre el Favicon]]></displayName>
+    <version><![CDATA[2.0.0]]></version>
+    <description><![CDATA[Recibe una notificaci&oacute;n directamente en la pesta&ntilde;a del navegador del back office de tu tienda cuando recibas un nuevo pedido, un nuevo cliente o un nuevo mensaje; incluso si est&aacute;s trabajando en otra p&aacute;gina]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[¿Estás seguro que quieres desinstalar este módulo?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,79 @@
+.lang-rtl {
+  * {
+    direction: rtl !important;
+  }
+  main {
+    text-align: right !important;
+  }
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.25em;
+}
+
+.container {
+  width: auto;
+}
+
+.medium-gutters {
+  margin-right: -0.7rem;
+  margin-left: -0.7rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
+}
+
+.small-gutters {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+.extra-small-gutters {
+  margin-right: -0.3rem;
+  margin-left: -0.3rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+//used for small product listing
+.list-small-gutters {
+  margin-right: -0.4rem;
+  margin-left: -0.4rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+}
+
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+ #left-column{
+    order: 0;
+  }
+  #left-column, %right-column{
+    margin-top: 2rem;
+  }
+}
+
+
+

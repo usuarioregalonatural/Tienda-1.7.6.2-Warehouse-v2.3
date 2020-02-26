@@ -1,0 +1,15 @@
+{shop_url}
+
+Hola,
+
+{product} está cerca de quedarse sin stock.
+
+Actualmente hay menos de {last_qty} artículos en stock.
+
+Stock disponible: {qty}
+
+Replenish your inventory, go to the Catalog > Stocks section of your back office to manage your stock.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

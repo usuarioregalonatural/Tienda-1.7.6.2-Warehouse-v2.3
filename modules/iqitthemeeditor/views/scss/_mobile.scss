@@ -1,0 +1,66 @@
+#mobile-header {
+  @include st2(background, $rm_bg_color);
+  border-bottom: $rm_border;
+  @if $rm_boxshadow != none {
+    box-shadow: $rm_boxshadow;
+  }
+
+  #mobile-header-sticky{
+    @include st2(background, $rm_bg_color);
+  }
+
+  .mobile-main-bar{
+    @include st2(padding-top, rem($rm_padding));
+    @include st2(padding-bottom, rem($rm_padding));
+  }
+
+  .m-nav-btn{
+    @include st2(color, $rm_link_color);
+    &:hover{
+      @include st2(color, $rm_link_h_color);
+    }
+  }
+  .m-nav-btn > span{
+    @if $rm_link_label != 1 {
+      display: none !important;
+    }
+  }
+  .mobile-buttons-bar{
+    @include st2(background, $rm_link_bg);
+  }
+
+
+
+
+  @if $rm_header == 3 {
+    .m-nav-btn{
+        @include st2(padding-top, rem($rm_link_padding));
+        @include st2(padding-bottom, rem($rm_link_padding));
+        border: $rm_link_border;
+        border-left: none;
+      &:hover{
+        @include st2(background, $rm_link_h_bg);
+      }
+    }
+    .col-mobile-btn:last-child{
+      .m-nav-btn{
+        border-right: none;
+      }
+    }
+  }
+}
+
+
+@if $rm_breakpoint == 1 {
+  @media (max-width:  9999px) {
+    #desktop-header{
+      display: none;
+    }
+    #mobile-header{
+      display: block;
+    }
+  }
+}
+
+
+

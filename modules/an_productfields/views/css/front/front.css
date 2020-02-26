@@ -1,0 +1,29 @@
+#an_productfields select {
+    width: 100% !important;
+}
+
+#an_productfields input,
+#an_productfields textarea,
+#an_productfields select {
+    background: white;
+}
+
+#an_productfields .radio-inline {
+    float: left;
+    padding-right: 10px;
+}
+
+.nodisplay {
+    display:none !important;
+}
+#an_productfields .form-group, #an_productfields .page-heading{
+    text-align: left !important;
+}
+
+div.showSweetAlert {
+    z-index: 1000001;
+}
+
+div.sweet-overlay {
+    z-index: 1000000;
+}

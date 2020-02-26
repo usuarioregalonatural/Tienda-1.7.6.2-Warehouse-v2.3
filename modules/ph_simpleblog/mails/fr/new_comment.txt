@@ -1,0 +1,13 @@
+
+[{shop_url}] 
+
+Bonjour {shop_name} 
+
+Un nouveau commentaire a été posté sur le post "{post_title}" ({post_link}) par {firstname} {lastname}.
+
+Commentaire :
+{comment_content}
+
+Vous pouvez aller dans l’administration -> Blog for PrestaShop -> Commentaires pour éditer ou accepter ce commentaire.
+
+

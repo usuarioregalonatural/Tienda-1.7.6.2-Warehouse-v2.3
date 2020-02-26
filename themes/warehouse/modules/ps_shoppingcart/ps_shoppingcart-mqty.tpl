@@ -1,0 +1,1 @@
+{$cart.products_count}

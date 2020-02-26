@@ -1,0 +1,42 @@
+
+@if $g_layout == boxed {
+  main {
+    overflow: hidden;
+    @include st2(max-width, $g_max_width);
+    $g_margin_tb: null !default;
+
+    @if $g_margin_tb != null {
+      @include st(margin, $g_margin_tb, px auto);
+    } @else{
+        margin: 0 auto;
+    }
+
+    @if $g_boxshadow != none {
+    box-shadow: $g_boxshadow;
+  }
+  }
+}
+
+body{
+  background: $g_background;
+}
+
+.container, .elementor-section.elementor-section-boxed>.elementor-container {
+  @include st2(max-width, $g_max_width);
+}
+
+a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn) {
+  @include st2(color, $c_link_color);
+}
+a:hover:not(.nav-link):not(.btn) {
+  @include st2(color, $c_link_hover);
+}
+.pagination .page-list li:hover{
+  @include st2(border-color, $c_link_hover);
+}
+.pagination .page-list li.current{
+  @include st2(border-color, $c_link_hover);
+  a{
+    @include st2(color, $c_link_hover);
+  }
+}

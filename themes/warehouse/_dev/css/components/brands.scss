@@ -1,0 +1,52 @@
+#manufacturer-description-wrapper > .card{
+  border: none;
+}
+
+.btn-brands-more{
+  display: none;
+  &.collapsed{
+    display: block;
+  }
+}
+
+.ms-alphabetical {
+  .ms-letter-selector{
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: 0.625rem;
+  }
+  .ms-letter-selector > .ms-l-sep{
+    padding: 0 0.25rem;
+    opacity: .4;
+  }
+  .ms-letter-list{
+    border-bottom: 1px solid $gray-light;
+    padding: 1rem 0;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+  .ms-letter-list  > .ms-letter {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .ms-letter-brands ul{
+    margin: 0;
+  }
+}
+
+.ms-grid{
+  .brand{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .brand-img{
+    display: block;
+  }
+}
+
+
+
+

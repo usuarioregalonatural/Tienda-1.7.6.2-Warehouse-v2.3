@@ -1,0 +1,37 @@
+#iqitcompare-table {
+  position: relative; }
+  #iqitcompare-table > .iqitcompare-table-container {
+    overflow-x: auto;
+    overflow-y: hidden; }
+  #iqitcompare-table > .iqitcompare-table-actions {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.25); }
+  #iqitcompare-table .iqitcompare-product-td {
+    border: none !important; }
+  #iqitcompare-table td {
+    width: 200px;
+    min-width: 200px; }
+  #iqitcompare-table tbody {
+    float: left;
+    width: 100%; }
+  #iqitcompare-table .iqitcompare-product-tr {
+    background: none !important; }
+  #iqitcompare-table .iqitcompare-product {
+    padding-top: 2.0rem;
+    position: relative; }
+  #iqitcompare-table .iqitcompare-product .iqitcompare-remove {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+.btn-iqitcompare-add .added {
+  display: none; }
+
+.btn-iqitcompare-add.iqitcompare-added .added {
+  display: inline-block; }
+
+.btn-iqitcompare-add.iqitcompare-added .not-added {
+  display: none; }
+
+/*# sourceMappingURL=front.css.map*/

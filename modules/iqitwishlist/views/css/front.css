@@ -1,0 +1,18 @@
+#iqitwishlist-modal {
+  text-align: center; }
+  #iqitwishlist-modal .forgot-password {
+    margin-bottom: 1rem; }
+
+#iqitwishlist-user-products .iqitwishlist-product ._name {
+  padding: 0; }
+
+.btn-iqitwishlist-add .added {
+  display: none; }
+
+.btn-iqitwishlist-add.iqitwishlist-added .added {
+  display: inline-block; }
+
+.btn-iqitwishlist-add.iqitwishlist-added .not-added {
+  display: none; }
+
+/*# sourceMappingURL=front.css.map*/

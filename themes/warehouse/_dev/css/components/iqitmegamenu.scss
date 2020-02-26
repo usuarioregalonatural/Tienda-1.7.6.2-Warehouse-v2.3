@@ -1,0 +1,132 @@
+/*** HORIZONTAL MENU ***/
+
+
+/*** MOBILE MENU ***/
+
+#_desktop_iqitmegamenu-mobile{
+  display: none !important;
+}
+
+//general
+#iqitmegamenu-mobile {
+  clear: both;
+  font-size: 1.2rem;
+
+  li{
+    position: relative;
+  }
+
+  li ul{
+    font-size: 0.9em;
+    padding: 0.6em 0;
+    a {
+      padding: 0.6em 3em 0.6em 1em;
+    }
+  }
+
+  a{
+    display: block;
+    padding: 1em 3em 1em 1em;
+    min-height: 3em;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+
+  .mm-expand{
+    width: 3rem;
+    height: 1.55em;
+    line-height: 1.55em;
+    position: absolute;
+    right: 0;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    > .close-icon{
+      display: none;
+    }
+  }
+
+  li ul {
+    display: none;
+    padding-left: 2rem;
+    margin-left: -1rem;
+  }
+  li.show{
+    > ul {
+      display: block;
+    }
+    > .mm-expand{
+      > .close-icon{
+        display: inline-block;
+      }
+      > .expand-icon{
+        display: none;
+      }
+    }
+  }
+}
+
+//dropdown
+.col-mobile-menu-dropdown{
+  #_mobile_iqitmegamenu-mobile{
+    position: absolute;
+    left: 0;
+    top: initial;
+    z-index: 1000;
+    width: 100%;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s cubic-bezier(.7,0,.3,1);
+    -webkit-transition: all .2s cubic-bezier(.7,0,.3,1);
+  }
+  &.show{
+    #_mobile_iqitmegamenu-mobile{
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+//push
+.col-mobile-menu-push{
+  #_mobile_iqitmegamenu-mobile{
+    height: 100vh;
+    position: fixed;
+    z-index: 5005;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    -webkit-transform: translate3d(-115%, 0, 0);
+    transform: translate3d(-115%, 0, 0);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transition-timing-function: $smooth-transition-timing;
+    transition-timing-function: $smooth-transition-timing;
+    width: 260px;
+  }
+  &.show  #_mobile_iqitmegamenu-mobile {
+    transform: translate3d(0, 0, 0);
+  }
+  #iqitmegamenu-mobile{
+    min-height: 100%;
+  }
+}
+
+#mobile-header-sticky.stuck{
+
+  #_mobile_iqitmegamenu-mobile{
+    max-height: 94vh;
+    overflow-x: hidden;
+    height: auto;
+
+  }
+}

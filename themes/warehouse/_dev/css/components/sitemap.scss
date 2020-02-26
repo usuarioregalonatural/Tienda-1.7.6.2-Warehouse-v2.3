@@ -1,0 +1,27 @@
+.sitemap {
+  ul {
+    &.nested {
+      margin-left: 20px;
+    }
+
+    li {
+      font-size: 0.9rem;
+    }
+  }
+
+  .block-links {
+    ul > li {
+      margin-bottom: 0.2rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    li > ul {
+      margin-top: 0.2rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+
+}

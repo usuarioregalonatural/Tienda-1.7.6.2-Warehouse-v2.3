@@ -1,0 +1,19 @@
+.iqitsociallogin-colors-native .btn-facebook{
+    background: #4267B2 !important;
+    color: #fff !important;
+}
+.iqitsociallogin-colors-native .btn-google{
+    background: #d85040 !important;
+    color: #fff !important;
+}
+.iqitsociallogin-colors-native .btn-twitter{
+    background: #00aced!important;
+    color: #fff!important;
+}
+.iqitsociallogin-colors-native .btn-instagram{
+    background: #8e1a52!important;
+    color: #fff!important;
+}
+.iqitsociallogin-colors-native .btn-iqitsociallogin:hover {
+ opacity: 0.8;
+}

@@ -1,0 +1,32 @@
+.iqitvideos-block > .iqitvideo {
+  max-width: 100%; }
+
+.iqitvideos-block > .iqitvideo > .iframe {
+  width: 100%;
+  border: none; }
+
+#iqit-threesixty {
+  text-align: center;
+  cursor: grab;
+  cursor: -webkit-grab; }
+  #iqit-threesixty img {
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; }
+  #iqit-threesixty .threesixty--grabbing {
+    cursor: grabbing;
+    cursor: -webkit-grabbing; }
+
+.video-thumb-container {
+  width: 100px; }
+  .video-thumb-container > .iframe {
+    width: 100%;
+    border: none; }
+
+/*# sourceMappingURL=front.css.map*/

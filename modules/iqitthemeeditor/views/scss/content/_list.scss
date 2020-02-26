@@ -1,0 +1,332 @@
+/*** PS_FacatedSearch ***/
+#search_filters .noUi-connect{
+  @include st2(background, $pl_faceted_slider_color);
+}
+
+/*** Carousels ***/
+
+//arrows
+.slick-arrow{
+  @include st2(background, $pl_crsl_bg);
+  @include st2(color, $pl_crsl_txt);
+}
+
+
+//dots
+ul.slick-dots li button:before, ul.slick-dots li.slick-active button:before {
+  @include st2(color, $pl_crsl_dot_bg);
+}
+
+.slick-default-carousel {
+  .slick-dots {
+    @if $pl_crsl_dot != 1 {
+      display: none !important;
+    }
+  }
+}
+
+/*** Product miniature ***/
+
+//gutter size
+$pl_grid_margin: 0 !default;
+.products.row {
+  @include st2(margin, rem(-$pl_grid_margin));
+  > .col,
+  > [class*="col-"] {
+    @include st2(padding, rem($pl_grid_margin));
+  }
+}
+.slick-products-carousel{
+  @include st2(margin, rem(-$pl_grid_margin));
+  .slick-list{
+    @include st2(padding, rem($pl_grid_margin));
+  }
+  .product-carousel{
+    @include st2(padding, rem($pl_grid_margin));
+  }
+}
+
+.slick-products-carousel.slick-arrows-above{
+  .slick-next, .slick-prev{
+    @include st2(margin, rem($pl_grid_margin));
+  }
+}
+
+//item
+.product-miniature{
+  border: $pl_grid_b_border;
+  $pl_grid_bh_outline_width: 0 !default;
+  outline: $pl_grid_bh_outline_width  * 1px $pl_grid_bh_outline_type transparent;
+
+  @if $pl_grid_b_boxshadow != none {
+    box-shadow: $pl_grid_b_boxshadow;
+  }
+
+  @if $pl_grid_b_colors == 1 {
+    @include st2(background, $pl_grid_b_bg);
+    @include st2(color, $pl_grid_b_text);
+
+    a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn){
+      @include st2(color, $pl_grid_b_text);
+    }
+
+    .product-price{
+      @include st2(color, $pl_grid_b_price);
+    }
+    .iqit-review-star{
+      @include st2(color, $pl_grid_b_rating);
+    }
+  }
+
+  @if $pl_rollover == fade {
+    .thumbnail-container {
+      .product-thumbnail-second{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity .3s ease;
+        backface-visibility: hidden;
+      }
+      &:hover{
+        .product-thumbnail-second{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @if $pl_rollover == slide {
+    .thumbnail-container {
+      overflow: hidden;
+      .product-thumbnail-first{
+        -webkit-transition: transform .4s ease;
+        -moz-transition: transform .4s ease;
+        transition: transform .4s ease;
+        backface-visibility: hidden;
+      }
+      .product-thumbnail-second{
+        position: absolute;
+        left: 0;
+        right: 0;
+        -webkit-transition: transform .4s ease;
+        -moz-transition: transform .4s ease;
+        transition: transform .4s ease;
+        backface-visibility: hidden;
+      }
+      &:hover{
+        .product-thumbnail-second, .product-thumbnail-first{
+          -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+        }
+        .product-thumbnail-first:last-child{
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+.product-miniature-grid{
+  @include st2(padding, rem($pl_grid_padding));
+
+  .product-title{
+    @include st2(font-size, rem($pl_grid_name_font_size));
+    @include st2(letter-spacing, rem($pl_grid_name_font_spacing));
+    @include st(font-style, $pl_grid_name_font_style, '');
+    @include st(font-weight, $pl_grid_name_font_weight, '');
+    @include st(text-transform, $pl_grid_name_font_uppercase, '');
+  }
+  .product-price{
+    @include st2(font-size, rem($pl_grid_price_font_size));
+    @include st2(letter-spacing, rem($pl_grid_price_font_spacing));
+    @include st(font-style, $pl_grid_price_font_style, '');
+    @include st(font-weight, $pl_grid_price_font_weight, '');
+    @include st(text-transform, $pl_grid_price_font_uppercase, '');
+  }
+
+  @if $pl_grid_name_line == 1 {
+    .product-title{
+      overflow: hidden;
+      @include st2(height, rem($pl_grid_name_font_size+2));
+    }
+  }
+
+  @if $pl_grid_name_line == 2 {
+    .product-title{
+      overflow: hidden;
+      @include st2(height, rem(2*$pl_grid_name_font_size+2));
+    }
+  }
+
+  @if $pl_grid_name_line == 3 {
+    .product-title{
+      overflow: hidden;
+      @include st2(height, rem(3*$pl_grid_name_font_size+2));
+    }
+  }
+}
+
+//item hover
+.product-miniature:hover{
+  @include st2(border-color, $pl_grid_bh_border_c);
+  outline: $pl_grid_bh_outline;
+  @if $pl_grid_bh_boxshadow != none {
+    box-shadow: $pl_grid_bh_boxshadow;
+  }
+
+  @if $pl_grid_bh_colors == 1 {
+    @include st2(background, $pl_grid_bh_bg);
+    @include st2(color, $pl_grid_bh_text);
+
+    a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn){
+      @include st2(color, $pl_grid_bh_text);
+    }
+
+    .product-price{
+      @include st2(color, $pl_grid_bh_price);
+    }
+    .iqit-review-star{
+      @include st2(color, $pl_grid_bh_rating);
+    }
+  }
+}
+
+.product-miniature-grid{
+  .product-functional-buttons{
+    @include st2(background, $pl_grid_functional_bg);
+    a:link, a:visited, a:hover{
+      @include st2(color, $pl_grid_functional_txt!important);
+    }
+
+    @if $pl_grid_func_btn != 1{
+      display: none;
+    }
+
+  }
+}
+
+
+.products-grid .product-miniature {
+  @if $pl_grid_category_name == null or $pl_grid_category_name == 0{
+    .product-category-name{
+    display: none !important;
+    }
+  }
+  @if $pl_grid_reference == null or $pl_grid_reference  == 0{
+    .product-reference{
+      display: none !important;
+    }
+  }
+  @if $pl_grid_brand == null or $pl_grid_brand  == 0{
+    .product-brand{
+      display: none !important;
+    }
+  }
+  @if $pl_grid_desc == null or $pl_grid_desc == 0 {
+    .product-description-short{
+      display: none !important;
+    }
+  }
+  @if $pl_grid_qty == null or $pl_grid_qty == 0 {
+    .input-qty{
+      display: none !important;
+    }
+  }
+  @if $pl_grid_btn == null or $pl_grid_btn == 0 {
+    .product-add-cart{
+      display: none !important;
+    }
+  }
+  @if $pl_grid_colors == null  or $pl_grid_colors == 0{
+    .products-variants{
+      display: none  !important;
+    }
+  }
+  @if $pl_grid_discount_value == null  or $pl_grid_discount_value == 0{
+    .flag-discount-value{
+      display: none  !important;
+    }
+  }
+
+}
+
+//button
+.btn-product-list{
+  $pl_grid_btn_padding: 0 !default;
+  @include st2(padding, rem($pl_grid_btn_padding/2) rem($pl_grid_btn_padding));
+  @include st2(background, $pl_grid_btn_bg);
+  @include st2(color, $pl_grid_btn_color);
+  border: $pl_grid_btn_border;
+  &:hover{
+    @include st2(background, $pl_grid_btn_bg_h);
+    @include st2(color, $pl_grid_btn_color_h);
+    @include st2(border-color, $pl_grid_btn_border_h);
+  }
+}
+
+@if  $pl_grid_btn_align  == 1{
+.products-grid .product-miniature-default{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+.products-grid .product-miniature-default .product-description{
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.products-grid .product-add-cart{
+  margin: auto auto 0 auto;
+}
+.products-grid .slick-slide > div:only-child, .products-grid .slick-slide > div > .product-carousel{
+height: 100%;
+}
+}
+
+//grid-layout - 1
+.products-grid  .product-miniature-layout-1{
+@if $pl_grid_align == center {
+  text-align: center;
+  .input-group-add-cart {
+    justify-content: center;
+  }
+}
+  .product-description{
+    @include st2(padding, rem($pl_grid_text_padding));
+  }
+}
+
+//grid-layout - 2
+.products-grid  .product-miniature-layout-2{
+  @if $pl_grid_btn == null or $pl_grid_btn == 0 {
+    .product-add-cart{
+      display: none !important;
+    }
+    .products-variants {
+      padding-top: 0rem;
+    }
+  }
+  .product-description{
+    @include st2(padding, rem($pl_grid_text_padding));
+  }
+}
+
+//grid-layout - 3
+.products-grid  .product-miniature-layout-3{
+  .product-description{
+    @include st2(background, $pl_grid_overlay_bg);
+  }
+}

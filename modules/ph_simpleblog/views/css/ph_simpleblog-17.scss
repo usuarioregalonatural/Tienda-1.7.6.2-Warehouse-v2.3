@@ -1,0 +1,398 @@
+
+.simpleblog {
+  //Most Viewed Block
+  &__mostViewed {
+    &__menu {
+      margin-top: 0.625rem;
+
+      li {
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+
+        a {
+          border-bottom: 1px solid rgba(0,0,0,.25);
+          width: 100%;
+          display: inline-block;
+          margin: 0.3125rem 0 0;
+          padding-bottom: 0.1875rem;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__footer {
+      text-align: center;
+
+      .btn-primary {
+        color: white;
+      }
+    }
+  }
+  //Posts Listing
+
+
+  //Post
+  &__postInfo{
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0.5rem 0;
+      margin-bottom: 2rem;
+      display: flex;
+
+      @media (max-width: 991px) {
+        display: block;
+        overflow: auto;
+      }
+
+      li{
+
+        @media (max-width: 991px) {
+          float: left;
+          width: 50%;
+        }
+
+        a {
+          color: inherit;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &:last-child{
+          &:after{
+            display: none;
+          }
+        }
+
+        &:after{
+          content: '';
+          height: 10px;
+          background: #cecece;
+          width: 2px;
+          margin: 0 13px;
+          display: inline-block;
+
+          @media (max-width: 991px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__post{
+    margin-bottom: 60px;
+
+    &-featured {
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__content{
+    }
+  }
+
+  &__share{
+    margin-bottom: 60px;
+
+    ul{
+      list-style-type: none;
+      margin: 25px 0;
+      padding: 0;
+      display: flex;
+
+      @media (max-width: 991px) {
+        display: block;
+      }
+
+      li{
+        margin-right: 16px;
+
+        @media (max-width: 991px) {
+          margin: 0 0 10px;
+        }
+
+        .btn{
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__comments{
+    margin-bottom: 60px;
+
+
+    &-empty {
+      margin-bottom: 0;
+    }
+
+    .alert a {
+      color: inherit;
+    }
+
+    > div > ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      > li{
+        padding: 1.563rem 1.25rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:nth-child(odd){
+
+        }
+
+        &:nth-child(even){
+          background: hsla(0,0%,80%,.15);
+        }
+
+        .simpleblog__comments__authorInfo{
+          list-style-type: none;
+          margin: 0 0 12px;
+          padding: 0;
+          display: flex;
+
+          @media (max-width: 991px) {
+            display: block;
+          }
+
+          li{
+
+
+            &:last-child{
+              &:after{
+                display: none;
+              }
+            }
+
+            &:after{
+              content: '';
+              height: 9px;
+              background: rgba(0, 0, 0, 0.1);
+              width: 1px;
+              margin: 0 8px;
+              display: inline-block;
+
+              @media (max-width: 991px) {
+                display: none;
+              }
+            }
+          }
+
+          &__author{
+            font-weight: 600;
+          }
+        }
+
+        .simpleblog__comments__text{
+
+        }
+
+        .simpleblog__comments__text{
+          p{
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__addComment{
+    margin-bottom: 60px;
+
+    .alert a {
+      color: inherit;
+    }
+
+    > h2{
+      margin-bottom: 25px;
+    }
+
+    &__form{
+      .form-footer{
+        .btn-primary{
+          @media (max-width: 991px) {
+            width: 100%;
+            float: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__seo{
+    display: none;
+  }
+
+  &__categoryInfo{
+    border-bottom: 2px solid #d6d6d6;
+    margin: 30px 0;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+    p{
+      font-size: 14px;
+      margin: 30px 0;
+    }
+  }
+}
+
+// Globally add social buttons
+.btn{
+  &-facebook{
+    background: #415994;
+    color: white;
+
+    &:hover{
+      color: white;
+      background: #203363;
+    }
+
+    i{
+      margin-right: 4px;
+      font-size: 16px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &-twitter{
+    background: #4ba0ec;
+    color: white;
+
+    &:hover{
+      color: white;
+      background: #2f7bbf;
+    }
+
+    i{
+      margin-right: 4px;
+      font-size: 16px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &-google{
+    background: #bd403b;
+    color: white;
+
+    &:hover{
+      color: white;
+      background: #a12520;
+    }
+
+    i{
+      margin-right: 4px;
+      font-size: 16px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &-pinterest{
+
+    background: #ae2626;
+    color: white;
+
+    &:hover{
+      color: white;
+      background: #8e1010;
+    }
+
+    i{
+      margin-right: 4px;
+      font-size: 16px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.simpleblog-posts .simpleblog-post-item.first-in-line {
+  clear: left;
+}
+.simpleblog-posts .post-item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+  transition: background .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.elementor-blog-posts  .simpleblog-posts .post-item{
+  margin-bottom: 0rem;
+}
+
+.simpleblog-posts .post-thumbnail{
+  margin-bottom: 0.8rem;
+}
+.simpleblog-posts h2 {
+  font-size: 1rem;
+  background: none;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid hsla(0,0%,63%,.25);
+}
+.simpleblog-posts h2 a {
+  text-decoration: none;
+}
+.simpleblog-posts .post-content {
+  margin: 0.8rem 0;
+}
+.simpleblog-posts .post-content p img {
+  display: block;
+}
+.simpleblog-posts .post-content .post-read-more span {
+  text-decoration: underline;
+}
+.simpleblog-posts .post-content .post-read-more i {
+  font-size: 0.6em;
+}
+.simpleblog-posts .post-additional-info {
+  overflow: hidden;
+  padding-top: 0.6rem;
+  border-top: 1px solid hsla(0,0%,63%,.25);
+}
+.simpleblog-posts .post-additional-info div {
+  display: block;
+}
+.simpleblog-posts .post-additional-info a {
+  text-decoration: none;
+}
+.simpleblog-posts .post-additional-info a:hover {
+  text-decoration: underline;
+}
+.simpleblog-posts .post-additional-info span {
+  display: inline-block;
+  margin-right: 12px;
+}
+.simpleblog-posts .post-additional-info span i {
+  margin-right: 2px;
+}
+.simpleblog-posts .post-additional-info span:last-of-type {
+  margin-right: 0;
+}
+
+
+.simpleblog-posts.related .post-additional-info span {
+  float: none;
+  border-left: 0;
+  margin-left: 0px;
+  padding-left: 0px;
+}

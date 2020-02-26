@@ -1,0 +1,19 @@
+#products,
+#pagenotfound {
+  #main {
+    .page-header {
+      margin: rem(32px) 0 rem(48px);
+    }
+    .page-content {
+      margin-bottom: rem(160px);
+    }
+  }
+  .page-not-found {
+    .search-widget {
+      padding: 0;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

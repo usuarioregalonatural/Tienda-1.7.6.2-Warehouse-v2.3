@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>iqitfreedeliverycount</name>
+    <displayName><![CDATA[IQITFREEDELIVERYCOUNT - Amount Left to free shipping]]></displayName>
+    <version><![CDATA[1.4.1]]></version>
+    <description><![CDATA[Module countdown amount which left to free shipping]]></description>
+    <author><![CDATA[iqit-commerce.com]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

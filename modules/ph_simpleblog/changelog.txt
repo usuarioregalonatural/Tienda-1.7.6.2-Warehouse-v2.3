@@ -1,0 +1,295 @@
+Version 1.7.2 - August 2, 2019
+[-] BUGFIX: Solved few issues with gsitemap integration
+
+Version 1.7.1 - July 28, 2019
+[+] NEW: json-ld instead of schema.org using html markup
+[+] NEW: blog posts and categories are now available in sitemap of your store
+
+[*] IMPROVEMENT: properly cache recent posts
+
+[-] BUGFIX: minor fix to facebook comments and localization
+
+
+Version 1.7.0 - January 19, 2019
+[+] NEW: Next/Prev post links are available now in single.tpl (code commented out at this moment)
+[+] NEW: Add canonical URL to single blog page
+
+[*] IMPROVEMENT: Blog for PrestaShop tab has its own icon in back-office on PS 1.7
+[*] IMPROVEMENT: Compatibility with PHP 7.2
+
+[-] BUGFIX: Fix checking is user is logged in for native comment system
+[-] BUGFIX: Fix redirect after comment add
+[-] BUGFIX: Fix compatibility with gsitemap v4.x (we'll index there from next update)
+[-] BUGFIX: Fix tabs permissions for user different than SuperAdmin
+[-] BUGFIX: Fix custom meta title for blog categories
+[-] BUGFIX: Fix for saving post with invalid data
+[-] BUGFIX: Fix uploading of featured image while adding a first draft of the post
+[-] BUGFIX: Fix for adding related products while adding a first draft of the post
+[-] BUGFIX: Fixes for SEO we do not allow /blog with trailing slash at the end of the URL anymore
+[-] BUGFIX: Fix custom meta title not being used without custom description
+[-] BUGFIX: Fix facebook og:image
+
+...aaand we've added Authors tab, full featured management of Authors coming in next update! :)
+
+Version 1.6.4 - March 05, 2018
+[-] BUGFIX: Critical bugfix related to saving multi-lang posts and tags
+[-] BUGFIX: PHP 5.4 support bugfix (from 2 months from now i'll drop support for PHP < 5.6)
+
+Version 1.6.3 - March 04, 2018
+[+] NEW: Added possibility to choose wether you want to share featured or thumbnail image on Facebook
+
+[-] BUGFIX: Solved an issue with related products on PrestaShop 1.6
+[-] BUGFIX: Solved some issues related to setLocale
+[-] BUGFIX: Solved some issues related to URL routing
+
+Version 1.6.0 - February 11, 2018
+[+] NEW: PrestaShop 1.7 support
+
+[*] IMPROVEMENT: Allowing comments to be automatically accepted is now available again
+[*] IMPROVEMENT: "Recent posts" widget options are now under the "Configuration" of this widget
+[*] IMPROVEMENT: Tons of improvements under the hood which will help me develop quicker in the future
+
+[-] BUGFIX: Solved problem with some Notice errors in PS_DEV_MODE
+[-] BUGFIX: Solved problem with loading SmartShortcode shortcodes
+[-] BUGFIX: Solved problem with error while opening not accessible post for specific group
+[-] BUGFIX: Solved few issues with PHP 7+
+[-] BUGFIX: Solved problem with sharing blog posts on Facebook
+[-] BUGFIX: Solved issues with Schema.org (Google Rich Snippets)
+[-] BUGFIX: Solved issue with Redirect 301 on single post page
+[-] BUGFIX: Solved some issues with pagination
+[-] BUGFIX: Solved some issues with deleting/managing Covers, Featured images
+
+Version 1.5.0 - 2015-08-25
+[+] NEW: Better support for both VisualComposer and SmartShortcodes
+
+[-] IMPROVEMENT: Compatibility check for 1.6.1.1
+
+Version 1.4.1 - 2015-08-01
+[-] BUGFIX: Solved problem with old category url redirection
+[-] BUGFIX: Wrong URL to post category on single post page
+
+Version 1.4.0 - 2015-06-19
+[+] NEW: Disqus comments system
+
+[*] IMPROVEMENT: Prevent possibility to delete one last category
+
+[-] BUGFIX: Solved problem with bad breadcrumbs look on the blog homepage
+[-] BUGFIX: Solved problem with redirect to 404 pages on non exists category
+[-] BUGFIX: Solved problem with undefined variable notice in ph_relatedposts
+[-] BUGFIX: Solved problem with non visible post title in Tags tab.
+
+Version 1.3.7 - 2015-05-15
+[*] IMPROVEMENT: Ajax search for related products
+
+Version 1.3.6 - 2015-04-08
+[-] BUGFIX: Solved problem with meta description for blog homepage
+[-] BUGFIX: Solved few problems with related products
+
+Version 1.3.5 - 2015-03-13
+[-] BUGFIX: Solved problem with Fancybox on PrestaShop v1.6.0.5
+
+Version 1.3.4 - 2015-03-07
+[-] BUGFIX: Solved problem with deletion of the Related Products
+
+Version 1.3.3 - 2015-03-03
+[+] NEW: 2 new widgets used for displaying post in column
+
+[-] BUGFIX: Few small bugfixes
+
+Version 1.3.2.11 - 2015-02-27
+[+] NEW: Import/Export settings
+
+[*] IMPROVEMENT: Better managament of blog layout using Preferences -> Themes -> Advanced Settings
+Note: Your theme must be compatible with this mechanism, it is standard since PrestaShop 1.6.0.6
+
+[-] BUGFIX: Solved problem with ul/ol style in category description
+
+Version 1.3.2.10 - 2015-02-18
+[-] BUGFIX: Solved fatal SQL error
+[-] BUGFIX: Solved notice error in back-office with enabled PS_DEV_MODE
+
+Version 1.3.2.9 - 2015-02-06
+[*] IMPROVEMENT: You can now load product-list.tpl from your theme for Related Products
+
+Version 1.3.2.8 - 2015-02-05
+[+] NEW: Comments are now available also for non logged-in users
+[+] NEW: Spam protection provided by reCAPTCHA
+
+Version 1.3.2.7 - 2015-01-14
+[*] IMPROVEMENT: You can now mark post as featured from Admin Posts List
+
+[-] BUGFIX: Solved problem with Related Posts layout
+[-] BUGFIX: Solved few problems with related products
+[-] BUGFIX: Solved problem with Related Posts deletion
+
+Version 1.3.2.6 - 2015-01-07
+[*] IMPROVEMENT: Move gallery/video below post content
+
+[-] BUGFIX: No more javascript conflicts on post edit page
+[-] BUGFIX: ul/ol are now handled properly in post content
+
+Version 1.3.2.5 - 2015-01-03
+[+] NEW: Related Products
+[+] NEW: Possibility to hook Related Posts widget to displayRight(Left)Column and displayRight(Left)ColumnProduct
+[+] NEW: Subcategories
+[+] NEW: Two configurable custom blocks for homepage (more coming soon)
+    
+[*] IMPROVEMENT: Now Related Posts supports layout with post types
+
+[-] BUGFIX: Solved some problems with multi-store installation
+
+Version 1.3.2.1 - 2014-11-25
+[*] IMPROVEMENT: Optimization for GDThumb plugin, images are now 50-70% smaller without quality loss
+[*] IMPROVEMENT: Better integration with Schema.org
+
+[-] BUGFIX: Solved problem with wrong redirect posts with multi-lang, different link_rewrite
+[-] BUGFIX: Solved problem with category HTML description
+
+Version 1.3.2.0 - 2014-11-22
+[+] NEW: New hook for socialsharing icons etc.
+[+] NEW: Compatibility with Schema.org Blog
+
+[*] IMPROVEMENT: User now can disable loading assets too from Settings
+
+[-] BUGFIX: og:image path is absolute now
+[-] BUGFIX: better handling of update from 1.2.1.0 to 1.2.2.0
+
+Version 1.3.1.9 - 2014-11-20
+[*] IMPROVEMENT: For developers - added possibility to disable loading of assets (fitvids, font-awesome etc.)
+
+[-] BUGFIX: Some W3C improvements
+[-] BUGFIX: No more javascript errors on Firefox/IE
+
+Version 1.3.1.8 - 2014-10-31
+[-] BUGFIX: Critical bugfix related to Gallery Post Type
+
+Version 1.3.1.7 - 2014-10-27
+[-] BUGFIX: Critical bugfix related to external_url field
+[-] BUGFIX: Critical bugfix related to recent posts
+
+Version 1.3.1.6 - 2014-10-20
+[+] NEW: Post types: url, video, gallery
+
+[*] IMPROVEMENT: Code cleaning
+
+[-] BUGFIX: Solved few problems with futur publication date posts
+[-] BUGFIX: Solved few problems with upgrade from earlier versions
+
+Version 1.3.0.1 - 2014-09-24
+[-] BUGFIX: Solved problem with thumbnail regeneration
+
+Version 1.3.0.0 - 2014-09-24
+[+] NEW: Native comments system
+[+] NEW: New look
+[+] NEW: Now you can add article with future/past publication date
+[+] NEW: Masonry layout
+[+] NEW: Support for SmartShortcode module
+
+[*] IMPROVEMENT: better manage access to articles
+[*] IMPROVEMENT: Simple Blog was totally re-written in most part of code
+[*] IMPROVEMENT: Responsive Facebook comments
+[*] IMPROVEMENT: You can set meta description for blog homepage
+[*] IMPROVEMENT: You can set different meta_title then title for articles
+
+[-] BUGFIX: 10+ bugfixes (moduleRoutes, module tab, responsive errors etc.)
+
+Version 1.2.1.1 - 2014-07-01
+
+[*] Special version which fix bug caused by 1-click autoupgrade to PrestaShop 1.6.0.6
+
+Version 1.2.1.0 - 2014-06-10
+[*] IMPROVEMENT: Easily to find URL to your blog in back-office
+
+[-] BUGFIX: Prevent this error: http://forge.prestashop.com/browse/PSCSX-1811
+[-] BUGFIX: Small issue with multi-store feature
+
+Version 1.2.0.9 - 2014-05-06
+[*] IMPROVEMENT: Responsive views improvements
+
+[-] BUGFIX: Small issue with multi-store feature
+
+Version 1.2.0.8 - 2014-04-01
+[+] NEW: You can setup different number of columns for recent posts/related posts and category page
+[+] NEW: You can setup default date format for posts
+
+[*] IMPROVEMENT: We've added an icon for SimpleBlog in the left menu in PrestaShop 1.6
+[*] IMPROVEMENT: Improved the look on version 1.6 
+
+[-] BUGFIX: A few problems with checking the compatibility version
+[-] BUGFIX: Issues with grid equalHeight
+
+Version 1.2.0.4 - 2014.03.20
+[-] BUGFIX: Issues with ph_relatedposts
+
+Version 1.2.0.3 - 2014.03.19
+[+] NEW: For Theme Developers - you can use init/my-install.php file for using your own start configuration in your Theme (eg. image sizes)
+[+] NEW: Set position for blog category by drag&drop mechanism, you can choose: sort by position, name or Category ID
+[+] NEW: Now you can add cover image for blog category
+[+] NEW: "Likes" system for single post (thanks to Marek Mnishek!)
+[+] NEW: "Views" for single posts
+[+] NEW: Featured images for single post now fully available for all of you
+
+[*] IMPROVEMENT: Added the "Save and stay" when editing a blog category
+[*] IMPROVEMENT: Added "View" on each row in SimpleBlog -> Categories
+
+[-] BUGFIX: A few problems with checking the compatibility version
+[-] BUGFIX: Issues with grid eqalHeight
+
+Version 1.1.9.5 - 2014.03.05
+[+] NEW: Full support for PrestaShop 1.6
+
+[-] BUGFIX: Custom CSS is not required anymore
+[-] BUGFIX: Secure updates for unactive and unavailable for non-logged users posts
+
+Version 1.1.9.3 - 2014.02.28
+[+] NEW: Custom CSS from Settings tab
+[+] NEW: Define number of columns when using grid layout (2,3 or 4)
+
+Version 1.1.9 - 2014.02.27
+[+] NEW: Allow to add post visible only for registered and logged in customers
+
+[*] IMPROVEMENT: Prepare for PrestaShop 1.6!
+
+[-] BUGFIX: Some bugfixes related to PrestaShop v1.5.3
+[-] BUGFIX: Cannot delete post with cover
+[-] BUGFIX: Covers and featured images caching
+
+Version 1.1.8 - 2014.02.16
+[+] NEW: Dynamic templates for Developers - more details in Documentation -> For theme developers
+[+] NEW: View icon on SimpleBlog Posts List
+
+[*] IMPROVEMENT: huge improvements for SEO and multi-lang support (redirects from lang2lang, non-isset rewrites etc.)
+[*] IMPROVEMENT: Duplication of Init Facebook Connect can be disabled in SimpleBlog -> Settings
+
+[-] BUGFIX: Bad redirects from lang to lang from blocklanguages
+[-] BUGFIX: Facebook comments and share buttons issues
+[-] BUGFIX: FontAwesome issues
+[-] BUGFIX: Issues with data filtering on AdminSimpleBlogPostController
+[-] BUGFIX: Issues with post thumbnails on Back-Office
+[-] BUGFIX: Issues with equalHeight Grid on Tablets and Phones
+
+Version 1.1.6 - 2014.02.10
+[*] IMPROVEMENT: You can transplant SimpleBlog Categories block to homepage, right column or you can use just {hook h='displaySimpleBlogCategories'}
+
+[-] BUGIFX: Remove some debug strings from package... sorry for that.
+[-] BUGFIX: Translations for "SimpleBlog -> Settings" are possible now. Thanks to @matrixsoft for message about this bug!
+
+Version 1.1.5 - 2014.02.06
+[+] NEW: New widget - Related Posts, link your posts to products and display them on product page
+
+[*] IMPROVEMENT: HTML on category description
+[*] IMPROVEMENT: More detailed documentation
+
+[-] BUGFIX: Multi-store feature bugfixes
+
+Version 1.1.4 - 2014.02.04
+[+] NEW: Polish (pl_PL) translation
+
+[*] IMPROVEMENT: display category description by default
+[*] IMPROVEMENT: documentation improvements
+
+[-] BUGFIX: pagination on category fixed
+[-] BUGFIX: fixed problems with meta tags
+
+Version 1.1.3 - 2014.02.03
+[+] first release

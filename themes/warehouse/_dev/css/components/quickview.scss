@@ -1,0 +1,83 @@
+.quickview {
+  &.quickview-second-modal{
+    z-index: 999990;
+  }
+  .modal-dialog {
+    max-width: 1024px;
+  }
+  .modal-content {
+    min-height: 450px;
+    border: none;
+  }
+  .modal-body {
+    min-height: 380px;
+    padding: 0;
+  }
+  .layer {
+    display: none;
+  }
+  .images-container {
+    margin: 0;
+    .expander{
+      display: none !important;
+    }
+  }
+  .images-container-bottom .product-cover{
+    margin: 0;
+  }
+  .images-container-left .row > .col-left-product-thumbs{
+    display: none;
+  }
+  .images-container-left .row > .col-left-product-cover {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .mask {
+      display: none !important;
+  }
+  .quickview-info{
+    padding: 2rem;
+    padding-bottom: 1rem;
+    max-height: 620px;
+    overflow-y: auto;
+  }
+  button.close{
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    font-size: 2.7rem;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .js-quickview-np-btn{
+    position: absolute;
+    top: 50%;
+    z-index: 22;
+    display: block;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 3rem;
+    opacity: 0.8;
+    transition: opacity .2s cubic-bezier(.7,0,.3,1);
+    &:hover{
+      opacity: 1;
+    }
+  }
+  #js-quickview-prev-btn{
+    left: -3.5rem;
+    padding: 0.8rem 1rem 0.8rem 0.8rem;
+  }
+  #js-quickview-next-btn{
+    right: -3.5rem;
+    padding: 0.8rem 0.8rem 0.8rem 1rem;
+  }
+
+  @media (max-width: 1100px){
+    .js-quickview-np-btn{
+      display: none;
+    }
+  }
+}
+
+

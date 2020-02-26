@@ -1,0 +1,8 @@
+*ERROR* 	v1.7.6.2	2019/12/31 - 11:20:53: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 12:59:17: Invalid address #2 at line 529 in file classes/Address.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 12:59:20: Invalid address #2 at line 529 in file classes/Address.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 12:59:42: Invalid address #2 at line 529 in file classes/Address.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 12:59:53: Invalid address #2 at line 529 in file classes/Address.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 12:59:56: Invalid address #2 at line 529 in file classes/Address.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 13:00:11: Invalid address #2 at line 529 in file classes/Address.php
+*ERROR* 	v1.7.6.2	2019/12/31 - 12:38:33: Link to database cannot be established: SQLSTATE[HY000] [1049] Unknown database 'regalonatural' at line 127 in file classes/db/DbPDO.php

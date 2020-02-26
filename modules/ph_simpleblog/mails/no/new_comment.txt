@@ -1,0 +1,14 @@
+
+[{shop_url}] 
+
+Hi, {shop_name} 
+
+You have a new comment on blog article "{post_title}" ({post_link}) from {firstname} {lastname}.
+
+Comment:
+{comment_content}
+
+You can go to Back-Office -> Simple Blog -> Comments and edit/accept this comment.
+
+
+
